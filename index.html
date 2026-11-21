@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="АРМ СОБ">
+  <meta name="theme-color" content="#0f1410">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="manifest" href="manifest.json">
+  <title>АРМ СОБ — Расчёт, Таблица, ПРК, Обучение</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-row">
+      <div class="brand">
+        <button class="brand-badge" id="btnSobBadge" type="button" title="Генератор задач СОБ">СОБ</button>
+        <div>
+          <div class="brand-title">АРМ Старшего офицера батареи</div>
+          <div class="brand-sub" id="headerTaskSummary">Введите исходные данные</div>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <div class="sys-switch" id="topSystemSwitch">
+          <button class="sys-btn sys-d30 active" data-sys-mode="d30" type="button">Д-30</button>
+          <button class="sys-btn sys-2b11" data-sys-mode="2b11" type="button">2Б11</button>
+          <button class="sys-btn sys-theory" data-sys-mode="theory" type="button">Теория</button>
+        </div>
+        <button class="btn btn-accent btn-sm" id="btnOpenSetup" type="button">Исходные данные</button>
+        <button class="btn btn-ghost btn-sm" id="btnResetAll" type="button">Сброс</button>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab-btn active" data-tab="calc" type="button">Расчёт</button>
+      <button class="tab-btn" data-tab="table" type="button">Таблица <span class="badge-count" id="tableCountBadge">0</span></button>
+      <button class="tab-btn" data-tab="prk" type="button">ПРК</button>
+      <button class="tab-btn" data-tab="learn" type="button">Обучение</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- ВКЛАДКА 1: РАСЧЁТ -->
+    <section class="tab-panel active" id="panel-calc">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h2>Координаты и цель (ПГЗ / ОГЗ)</h2>
+            <button class="btn btn-outline btn-xs" id="btnEditInputsQuick" type="button">Ввести / Изменить</button>
+          </div>
+          <div class="kv-grid">
+            <div class="kv-item">
+              <span class="kv-label">КНП (X / Y / h)</span>
+              <span class="kv-val mono" id="outKnp">—</span>
+            </div>
+            <div class="kv-item">
+              <span class="kv-label">ОП (X / Y / h)</span>
+              <span class="kv-val mono" id="outOp">—</span>
+            </div>
+            <div class="kv-item">
+              <span class="kv-label">Координаты цели (Xц / Yц / hц)</span>
+              <span class="kv-val mono accent-text" id="outTargetXY">—</span>
+              <div class="kv-formula" id="f_outTargetXY"></div>
+            </div>
+            <div class="kv-item">
+              <span class="kv-label">Дальность топогр. (Дцт)</span>
+              <span class="kv-val mono accent-text" id="outDct">—</span>
+              <div class="kv-formula" id="f_outDct"></div>
+            </div>
+            <div class="kv-item">
+              <span class="kv-label">Дирекц. угол ОП–Цель (αцт)</span>
+              <span class="kv-val mono" id="outAct">—</span>
+              <div class="kv-formula" id="f_outAct"></div>
+            </div>
+            <div class="kv-item">
+              <span class="kv-label">Доворот от ОН (δцт)</span>
+              <span class="kv-val mono accent-text" id="outDeltact">—</span>
+              <div class="kv-formula" id="f_outDeltact"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h2>Исчисленные данные и коэффициенты</h2>
+          </div>
+          <div class="kv-grid">
+            <div class="kv-item">
+              <span class="kv-label">Дальность исчисл. (Ди)</span>
+              <span class="kv-val mono" id="outDi">—</span>
+              <div class="kv-formula" id="f_outDi"></div>
+            </div>
+            <div class="kv-item">
+              <span class="kv-label">Доворот исчисл. (δи)</span>
+              <span class="kv-val mono accent-text" id="outDeltai">—</span>
+              <div class="kv-formula" id="f_outDeltai"></div>
+            </div>
+            <div class="kv-item">
+              <span class="kv-label">Уровень (Ур) / Прицел (Пр)</span>
+              <span class="kv-val mono" id="outUrPr">—</span>
+              <div class="kv-formula" id="f_outUrPr"></div>
+            </div>
+            <div class="kv-item">
+              <span class="kv-label">Коэф. удаления (Ку = Дк/Дцт)</span>
+              <span class="kv-val mono accent-text" id="outKu">—</span>
+              <div class="kv-formula" id="f_outKu"></div>
+            </div>
+            <div class="kv-item">
+              <span class="kv-label">Поправка на смещение (ПС)</span>
+              <span class="kv-val mono" id="outPs">—</span>
+              <div class="kv-formula" id="f_outPs"></div>
+            </div>
+            <div class="kv-item">
+              <span class="kv-label">Шаг угломера (Шу = ПС/0.01·Дцт)</span>
+              <span class="kv-val mono accent-text" id="outShu">—</span>
+              <div class="kv-formula" id="f_outShu"></div>
+            </div>
+            <div class="kv-item">
+              <span class="kv-label">Скачок (Ск = 1/3·Гц)</span>
+              <span class="kv-val mono" id="outSk">—</span>
+              <div class="kv-formula" id="f_outSk"></div>
+            </div>
+            <div class="kv-item">
+              <span class="kv-label">Интервал веера (Iв)</span>
+              <span class="kv-val mono" id="outIv">—</span>
+              <div class="kv-formula" id="f_outIv"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- БЛОК ТАБЛИЦЫ СТРЕЛЬБЫ Д-30 -->
+      <div class="card hidden" id="tsCard">
+        <div class="card-header">
+          <h2 id="tsCardTitle">Таблица стрельбы (ТС №145, Д-30 ОФ-462Ж)</h2>
+          <span class="pill" id="tsStatusPill">Авто</span>
+        </div>
+        <div class="kv-grid">
+          <div class="kv-item">
+            <span class="kv-label">Заряд / Дальность (Ди)</span>
+            <span class="kv-val mono" id="tsChargeDist">—</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-label">Прицел (Тыс. / Механ.)</span>
+            <span class="kv-val mono accent-text" id="tsPr">—</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-label">ΔХтыс (м на 0-01)</span>
+            <span class="kv-val mono accent-text" id="tsDxTys">—</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-label">Вд / Вилки (УВ 4·Вд / ШВ 8·Вд)</span>
+            <span class="kv-val mono" id="tsVd">—</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-label">Деривация (Z, тыс.)</span>
+            <span class="kv-val mono" id="tsZ">—</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Генерация 1-й команды</h2>
+          <span class="pill" id="outOpSidePill">ОП: —</span>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="cmd1Shell">Снаряд</label>
+            <input type="text" id="cmd1Shell" placeholder="ОФ" value="ОФ">
+          </div>
+          <div class="field">
+            <label for="cmd1Fuze">Взрыватель</label>
+            <input type="text" id="cmd1Fuze" placeholder="О" value="О">
+          </div>
+          <div class="field">
+            <label for="cmd1Charge">Заряд</label>
+            <select id="cmd1Charge">
+              <option value="full">Полный</option>
+              <option value="reduced">Уменьшенный</option>
+              <option value="1">1-й</option>
+              <option value="2" selected>2-й</option>
+              <option value="3">3-й</option>
+              <option value="4">4-й</option>
+              <option value="5">5-й</option>
+              <option value="6">6-й</option>
+              <option value="long">Дальнобойный</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cmd1Pr">Прицел (Пр, тыс.)</label>
+            <input type="number" id="cmd1Pr" step="1" placeholder="Авто из ТС">
+          </div>
+        </div>
+        <div class="field">
+          <label for="cmd1Preview">Текст команды (можно отредактировать перед записью)</label>
+          <textarea id="cmd1Preview" rows="3" placeholder="Сформируется после расчёта данных"></textarea>
+        </div>
+        <div class="actions-bar">
+          <button class="btn btn-primary" id="btnGenerateCmd1" type="button">Сформировать 1-ю команду и занести в таблицу</button>
+          <button class="btn btn-outline" id="btnRecalc" type="button">Пересчитать</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ВКЛАДКА 2: ТАБЛИЦА -->
+    <section class="tab-panel" id="panel-table">
+      <div class="card table-meta-card">
+        <div class="table-meta-grid">
+          <div><span class="meta-lbl">Характер и № цели:</span> <strong id="tblGoalDesc">—</strong></div>
+          <div><span class="meta-lbl">Ф:</span> <strong class="mono" id="tblF">—</strong></div>
+          <div><span class="meta-lbl">Гл:</span> <strong class="mono" id="tblGl">—</strong></div>
+          <div><span class="meta-lbl">Ку:</span> <strong class="mono" id="tblKu">—</strong></div>
+          <div><span class="meta-lbl">Шу:</span> <strong class="mono" id="tblShu">—</strong></div>
+          <div><span class="meta-lbl">ПС:</span> <strong class="mono" id="tblPs">—</strong></div>
+        </div>
+      </div>
+
+      <div class="gen-scenario-banner hidden" id="tableScenarioBanner"></div>
+      <div class="status-strip">
+        <div class="stat-box"><span>Текущий Пр</span><strong class="mono" id="curPr">—</strong></div>
+        <div class="stat-box"><span>Уровень</span><strong class="mono" id="curUr">—</strong></div>
+        <div class="stat-box"><span>Напр. (ОН)</span><strong class="mono" id="curNapr">—</strong></div>
+        <div class="stat-box"><span>Расход</span><strong class="mono accent-text" id="curRashod">0</strong></div>
+      </div>
+      <div class="ffe-status-bar hidden" id="ffeStatusBar"></div>
+
+      <div class="card table-card">
+        <div class="table-wrap">
+          <table class="fire-table">
+            <thead>
+              <tr>
+                <th>№</th>
+                <th>Команда</th>
+                <th>Пр</th>
+                <th>Ур</th>
+                <th>Напр</th>
+                <th>Наблюдения</th>
+                <th>Расход</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="fireTableBody">
+              <tr class="empty-row">
+                <td colspan="8">Таблица пуста. Сформируйте 1-ю команду во вкладке «Расчёт».</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="bottom-bar">
+        <button class="btn btn-primary btn-lg" id="btnOpenBurst" type="button">Разрыв / Корректура</button>
+        <button class="btn btn-accent" id="btnFireForEffect" type="button">На поражение</button>
+        <button class="btn btn-outline" id="btnRecordEnd" type="button">Стой. Записать</button>
+        <button class="btn btn-ghost" id="btnFinishFire" type="button">Окончить стрельбу</button>
+      </div>
+    </section>
+
+    <!-- ВКЛАДКА 3: ИНТЕРАКТИВНЫЙ ПРК-69 / ПРК-75 -->
+    <section class="tab-panel" id="panel-prk">
+      <div class="card">
+        <div class="card-header">
+          <div class="segmented" id="prkModelSwitch">
+            <button class="seg-btn active" data-prk="69" type="button">ПРК-69</button>
+            <button class="seg-btn" data-prk="75" type="button">ПРК-75</button>
+          </div>
+          <button class="btn btn-outline btn-sm" id="btnToggleManualPrk" type="button">Отдельная оцифровка</button>
+        </div>
+
+        <div class="kv-grid mb-12">
+          <div class="kv-item">
+            <span class="kv-label">Режим прибора</span>
+            <span class="kv-val accent-text" id="prkModeLabel">Авто по задаче</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-label">Угол круга (ПС / поворот)</span>
+            <span class="kv-val mono accent-text" id="prkPs">—</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-label">Дцт / Дк</span>
+            <span class="kv-val mono" id="prkDists">—</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-label">Ку / Шу / Последний разрыв</span>
+            <span class="kv-val mono" id="prkKuShu">—</span>
+          </div>
+        </div>
+
+        <!-- ПАНЕЛЬ РУЧНОЙ ОЦИФРОВКИ (ТОЛЬКО ПОСЛЕ НАЖАТИЯ «ОТДЕЛЬНАЯ ОЦИФРОВКА») -->
+        <div id="prkManualControls" class="prk-manual-box hidden">
+          <div class="prk-ctrl-row" id="prk69CircleRow">
+            <span class="ctrl-title">Активный круг (ПРК-69):</span>
+            <div class="segmented" id="prkActiveCircleSwitch">
+              <button class="seg-btn active" data-circle="left" type="button">Левый круг</button>
+              <button class="seg-btn" data-circle="right" type="button">Правый круг</button>
+            </div>
+          </div>
+          <div class="prk-ctrl-row">
+            <span class="ctrl-title" id="prkRotLabel">Вращение круга:</span>
+            <div class="ctrl-btns">
+              <button class="btn btn-outline btn-xs" data-rot="-100" type="button">-1-00</button>
+              <button class="btn btn-outline btn-xs" data-rot="-10" type="button">-0-10</button>
+              <button class="btn btn-outline btn-xs" data-rot="10" type="button">+0-10</button>
+              <button class="btn btn-outline btn-xs" data-rot="100" type="button">+1-00</button>
+              <button class="btn btn-ghost btn-xs" id="btnPrkSyncAuto" type="button">Сброс к авто</button>
+            </div>
+          </div>
+          <input type="range" id="prkAngleSlider" min="-3000" max="3000" step="5" value="0" class="prk-slider">
+
+          <div class="prk-ctrl-row hidden" id="prk75RulerRow">
+            <span class="ctrl-title">Сдвиг линейки (ПРК-75, Л/П):</span>
+            <input type="range" id="prkRulerSlider" min="-80" max="80" step="2" value="0" class="prk-slider" style="max-width:190px">
+          </div>
+
+          <div class="prk-ctrl-row">
+            <span class="ctrl-title">Тап по прибору ставит:</span>
+            <div class="segmented" id="prkToolSwitch">
+              <button class="seg-btn active" data-tool="point" type="button">● Точка</button>
+              <button class="seg-btn" data-tool="tick" type="button">| Риска</button>
+              <button class="seg-btn" data-tool="target" type="button">✕ Разрыв</button>
+            </div>
+            <div class="ctrl-btns">
+              <button class="btn btn-ghost btn-xs" data-clear="point" type="button">✕ Точки</button>
+              <button class="btn btn-ghost btn-xs" data-clear="tick" type="button">✕ Риски</button>
+              <button class="btn btn-ghost btn-xs" data-clear="target" type="button">✕ Разрывы</button>
+              <button class="btn btn-ghost btn-xs" data-clear="all" type="button">✕ Всё</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="prk-visual-wrap">
+          <svg id="prkSvg" viewBox="0 0 380 280" class="prk-svg-big" aria-label="Интерактивный прибор ПРК"></svg>
+        </div>
+
+        <div id="prkGuideContent" class="guide-box"></div>
+      </div>
+    </section>
+
+    <!-- ВКЛАДКА 4: ОБУЧЕНИЕ -->
+    <section class="tab-panel" id="panel-learn">
+      <div class="card">
+        <div class="card-header">
+          <h2>Часть 1. Расчёт на калькуляторе до 1-й команды</h2>
+          <span class="pill" id="learnDataPill">По текущей задаче</span>
+        </div>
+        <div id="learnPart1" class="learn-steps"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Часть 2. Работа по разрывам после 1-й команды</h2>
+        </div>
+        <p class="muted-note">Выбери, на чём будешь считать корректуры во время пристрелки:</p>
+        <div class="segmented mb-12" id="learnToolSwitch">
+          <button class="seg-btn active" data-ltool="calc" type="button">На калькуляторе</button>
+          <button class="seg-btn" data-ltool="prk" type="button">На ПРК (69 / 75)</button>
+        </div>
+        <div id="learnPart2" class="learn-steps"></div>
+      </div>
+    </section>
+
+
+    <!-- ВКЛАДКА 5: ТЕОРИЯ (ПОИСК + ОПРЕДЕЛЕНИЯ + ФОРМУЛЫ + ПСиУО) -->
+    <section class="tab-panel" id="panel-theory">
+      <div class="card theory-hero-card">
+        <div class="card-header">
+          <h2>Справочник и теория (ПСиУО / БУА)</h2>
+          <span class="pill" id="theoryCountPill">13 пунктов</span>
+        </div>
+        <div class="theory-search-wrap">
+          <input type="text" id="theorySearchInput" placeholder="Поиск по теории: Ку, Шу, Ск, 100 м, ПС, устав...">
+          <button class="btn btn-ghost btn-xs" id="btnClearTheorySearch" type="button">✕</button>
+        </div>
+        <div class="theory-chips" id="theoryFilterChips">
+          <button class="theory-chip active" data-tcat="all" type="button">Все</button>
+          <button class="theory-chip" data-tcat="defs" type="button">Определения</button>
+          <button class="theory-chip" data-tcat="formulas" type="button">Формулы</button>
+          <button class="theory-chip" data-tcat="psi" type="button">ПСиУО</button>
+          <button class="theory-chip" data-tcat="ffe" type="button">Поражение</button>
+        </div>
+      </div>
+      <div id="theoryList" class="theory-list"></div>
+    </section>
+
+    <!-- ВКЛАДКА 6 (ПО КНОПКЕ СОБ): ГЕНЕРАТОР ЗАДАЧ И ИСТОРИЯ -->
+    <section class="tab-panel" id="panel-gen">
+      <div class="card">
+        <div class="card-header">
+          <h2 id="genTitle">Генератор задач СОБ (Д-30)</h2>
+          <button class="btn btn-outline btn-xs" id="btnCloseGenTab" type="button">← Назад к расчёту</button>
+        </div>
+        <p class="muted-note">Генерирует случайную огневую задачу для 122-мм гаубицы Д-30 с автоподбором заряда, вводными по разрывам и сохраняет последние 5 генераций.</p>
+        <div class="prk-ctrl-row" style="margin-bottom:10px">
+          <span class="ctrl-title">Корректировка:</span>
+          <div class="segmented" id="genCorrSwitch">
+            <button class="seg-btn active" data-gcorr="pnzr" type="button">ПНЗР (Л/П, +/-)</button>
+            <button class="seg-btn" data-gcorr="pkss" type="button">ПКСС (С/Ю, В/З)</button>
+          </div>
+        </div>
+        <div class="prk-ctrl-row" id="genD30FireModeRow" style="margin-bottom:10px">
+          <span class="ctrl-title">Стрельба (Д-30):</span>
+          <div class="segmented" id="genD30FireModeSwitch">
+            <button class="seg-btn active" data-gd30="random" type="button">Случайный</button>
+            <button class="seg-btn" data-gd30="nast" type="button">Настильная</button>
+            <button class="seg-btn" data-gd30="rik" type="button">Рикошет</button>
+            <button class="seg-btn" data-gd30="mort" type="button">Мортирная</button>
+          </div>
+        </div>
+        <div class="actions-bar">
+          <button class="btn btn-primary" id="btnGenerateRandomTask" type="button">Сгенерировать новую задачу</button>
+          <button class="btn btn-ghost btn-sm" id="btnClearGenHistory" type="button">Очистить историю</button>
+        </div>
+      </div>
+
+      <!-- КАРТОЧКА УСЛОВИЯ СГЕНЕРИРОВАННОЙ ЗАДАЧИ (СВОРАЧИВАЕТСЯ ПОСЛЕ РАСЧЁТА) -->
+      <div class="card hidden" id="genTaskPreviewCard">
+        <div class="card-header">
+          <h2 id="genPreviewTitle">Условие сгенерированной задачи</h2>
+          <button class="btn btn-outline btn-xs" id="btnToggleGenCondition" type="button">Свернуть</button>
+        </div>
+        <div id="genConditionBody">
+          <div id="genInputsGrid" class="kv-grid mb-12"></div>
+          <div id="genScenarioBox" class="gen-scenario-box"></div>
+        </div>
+        <div class="checkbox-row" style="margin-top:10px">
+          <label><input type="checkbox" id="genAutoBuildTable" checked> Автоматически составить готовую таблицу стрельбы по ПСиУО</label>
+        </div>
+        <div class="actions-bar" style="margin-top:10px">
+          <button class="btn btn-primary" id="btnSolveGeneratedTask" type="button">Рассчитать</button>
+        </div>
+      </div>
+
+      <!-- КАРТОЧКА ПОЛНОГО РЕШЕНИЯ И ГОТОВОЙ ТАБЛИЦЫ -->
+      <div class="card hidden" id="genSolutionCard">
+        <div class="card-header">
+          <h2>Решение и таблица стрельбы (ПСиУО)</h2>
+          <div class="ctrl-btns">
+            <button class="btn btn-outline btn-xs" id="btnGoToCalc" type="button">В «Расчёт»</button>
+            <button class="btn btn-outline btn-xs" id="btnGoToTable" type="button">В «Таблицу»</button>
+          </div>
+        </div>
+        <div id="genSolutionGrid" class="kv-grid mb-12"></div>
+        <div id="genSolutionTableWrap" class="table-wrap"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Последние 5 генераций</h2>
+          <span class="pill" id="genCountPill">0 / 5</span>
+        </div>
+        <div id="genHistoryList" class="gen-list">
+          <div class="empty-gen">Пока нет сохранённых генераций. Нажмите «Сгенерировать новую задачу».</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- МОДАЛЬНОЕ ОКНО 1: ИСХОДНЫЕ ДАННЫЕ ЗАДАЧИ -->
+  <div class="modal-backdrop" id="modalSetup" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Исходные данные задачи</h3>
+        <button class="btn btn-ghost btn-xs" id="btnCloseSetup" type="button">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="preset-bar">
+          <button class="btn btn-accent btn-sm" id="btnLoadVariant3" type="button">Заполнить пример (Вариант №3)</button>
+          <button class="btn btn-ghost btn-sm" id="btnClearSetup" type="button">Очистить поля</button>
+        </div>
+
+        <div class="form-section-title">1. Подразделение, система и заряд</div>
+        <div class="form-row">
+          <div class="field">
+            <label for="inSystem">Орудие / Система</label>
+            <select id="inSystem">
+              <option value="d30" data-name="122-мм Г Д-30">122-мм Г Д-30 (ТС №145 авто)</option>
+              <option value="2s1" data-name="122-мм СГ 2С1">122-мм СГ 2С1 (ТС №145 авто)</option>
+              <option value="7" data-name="152-мм Г Д-20 / 2С3">152-мм Г Д-20 / 2С3 (ΔХтыс = 7)</option>
+              <option value="2b11" data-name="120-мм миномёт 2Б11">120-мм миномёт 2Б11 (ТС авто)</option>
+              <option value="custom" data-name="Другое">Своё ΔХтыс</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="inCharge">Заряд</label>
+            <select id="inCharge">
+              <option value="full">Полный (V₀ 690)</option>
+              <option value="reduced">Уменьшенный (V₀ 565)</option>
+              <option value="1">1-й (V₀ 493)</option>
+              <option value="2" selected>2-й (V₀ 417)</option>
+              <option value="3">3-й (V₀ 335)</option>
+              <option value="4">4-й (V₀ 276)</option>
+              <option value="5">5-й (2Б11)</option>
+              <option value="6">6-й (2Б11)</option>
+              <option value="long">Дальнобойный (2Б11)</option>
+            </select>
+          </div>
+          <div class="field" id="inD30ModeField">
+            <label for="inD30Mode">Режим (Д-30)</label>
+            <select id="inD30Mode">
+              <option value="nast" selected>Настильная / навесная</option>
+              <option value="rik">Рикошет (взр. З)</option>
+              <option value="mort">Мортирная (45°–70°)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="inGuns">Орудий (Nор)</label>
+            <input type="number" id="inGuns" placeholder="Напр. 4" min="1" max="12">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="inDxTys">ΔХтыс (авто для Д-30)</label>
+            <input type="number" id="inDxTys" placeholder="Авто или 7" step="0.1" min="1">
+          </div>
+          <div class="field"><label for="inCallKnp">Позывной КНП</label><input type="text" id="inCallKnp" placeholder="Кама"></div>
+          <div class="field"><label for="inCallOp">Позывной ОП</label><input type="text" id="inCallOp" placeholder="Вишня"></div>
+          <div class="field"><label for="inCallCmd">Ком. адн</label><input type="text" id="inCallCmd" placeholder="Дон"></div>
+        </div>
+
+        <div class="form-section-title">2. Координаты КНП и ОП</div>
+        <div class="form-row">
+          <div class="field"><label for="inKnpX">КНП X</label><input type="number" id="inKnpX" placeholder="95916"></div>
+          <div class="field"><label for="inKnpY">КНП Y</label><input type="number" id="inKnpY" placeholder="39161"></div>
+          <div class="field"><label for="inKnpH">КНП h (м)</label><input type="text" inputmode="text" id="inKnpH" placeholder="95"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="inOpX">ОП X</label><input type="number" id="inOpX" placeholder="95365"></div>
+          <div class="field"><label for="inOpY">ОП Y</label><input type="number" id="inOpY" placeholder="42173"></div>
+          <div class="field"><label for="inOpH">ОП h (м)</label><input type="text" inputmode="text" id="inOpH" placeholder="125"></div>
+        </div>
+
+        <div class="form-section-title">3. Данные цели и ОН (формат тыс: 33-98 или 3398)</div>
+        <div class="form-row">
+          <div class="field"><label for="inGoalNum">№ цели</label><input type="text" id="inGoalNum" placeholder="103"></div>
+          <div class="field"><label for="inGoalType">Характер цели</label><input type="text" id="inGoalType" placeholder="пехота на занятой позиции"></div>
+          <div class="field"><label for="inTaskType">Задача</label><input type="text" id="inTaskType" placeholder="Подавить"></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="inDk">Дк (м)</label><input type="number" id="inDk" placeholder="2660"></div>
+          <div class="field"><label for="inAk">αк (тыс)</label><input type="text" id="inAk" placeholder="33-98"></div>
+          <div class="field"><label for="inOn">ОН (тыс)</label><input type="text" id="inOn" placeholder="41-00"></div>
+          <div class="field"><label for="inBaseUglom">Осн. углом. (необяз.)</label><input type="text" id="inBaseUglom" placeholder="30-00"></div>
+          <div class="field"><label for="inMk">Mк (угол места, тыс)</label><div class="input-sign-wrap"><button class="btn-sign-toggle" data-sign-target="inMk" type="button">±</button><input type="text" inputmode="text" id="inMk" placeholder="0 (напр. -12)"></div></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="inFc">Фц (тыс или м)</label><input type="text" id="inFc" placeholder="0-40"></div>
+          <div class="field"><label for="inGc">Гц (м)</label><input type="number" id="inGc" placeholder="120"></div>
+          <div class="field"><label for="inFb">Фб (м, ширина бат.)</label><input type="number" id="inFb" placeholder="70"></div>
+        </div>
+
+        <div class="form-section-title">4. Поправки (необязательно, если нет данных)</div>
+        <div class="form-row">
+          <div class="field"><label for="inDdCis">ΔДцис (м)</label><div class="input-sign-wrap"><button class="btn-sign-toggle" data-sign-target="inDdCis" type="button">±</button><input type="text" inputmode="text" id="inDdCis" placeholder="-122 (или пусто)"></div></div>
+          <div class="field"><label for="inDdeltaCis">Δδиис (тыс)</label><div class="input-sign-wrap"><button class="btn-sign-toggle" data-sign-target="inDdeltaCis" type="button">±</button><input type="text" inputmode="text" id="inDdeltaCis" placeholder="+0-27 (или пусто)"></div></div>
+          <div class="field"><label for="inStartPr">Пр (пусто = авто из ТС)</label><input type="text" inputmode="text" id="inStartPr" placeholder="Авто из ТС"></div>
+        </div>
+        <div class="checkbox-row">
+          <label><input type="checkbox" id="inUseDeriv"> Учитывать табличную деривацию Z в довороте δи</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="btnApplySetup" type="button">Рассчитать</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- МОДАЛЬНОЕ ОКНО 2: РАЗРЫВ / КОРРЕКТУРА -->
+  <div class="modal-backdrop" id="modalBurst" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Ввод разрыва / корректура</h3>
+        <button class="btn btn-ghost btn-xs" id="btnCloseBurst" type="button">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="segmented mb-12" id="burstModeSwitch">
+          <button class="seg-btn active" data-mode="burst" type="button">По разрыву (Л/П, +/-)</button>
+          <button class="seg-btn" data-mode="pkss" type="button">ПКСС (С/Ю, В/З)</button>
+        </div>
+
+        <!-- РЕЖИМ 1: ПО РАЗРЫВУ -->
+        <div id="burstModePanel">
+          <div class="form-row">
+            <div class="field">
+              <label for="bDirSide">Направление</label>
+              <select id="bDirSide">
+                <option value="L">Лево (Л)</option>
+                <option value="R">Право (П)</option>
+                <option value="0">В створе (0)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="bDirVal">Отклонение (тыс, напр. 10 или 1-00)</label>
+              <input type="text" id="bDirVal" placeholder="0-10">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="bRangeSign">Знак по дальности</label>
+              <select id="bRangeSign">
+                <option value="+">+ (Перелёт)</option>
+                <option value="-">- (Недолёт)</option>
+                <option value="target">Цель / Накрытие</option>
+                <option value="?">? (Не наблюдал)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="bRangeMeters">Величина (м, пусто если только знак)</label>
+              <input type="number" id="bRangeMeters" placeholder="Напр. 200 или пусто">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="bForkStep">Шаг при знаке без метров (вилка, м)</label>
+              <input type="number" id="bForkStep" value="200" step="50">
+            </div>
+            <div class="field">
+              <label for="bFireMode">Следующая команда</label>
+              <select id="bFireMode">
+                <option value="adjust">Осн. 1 сн. Ог. (пристрелка)</option>
+                <option value="battery">Батарее. По 2 сн. бег. Ог.</option>
+                <option value="same">По 2 сн. бег. Ог.</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="bSeriesMode">Контроль поражения (серия разрывов)</label>
+              <select id="bSeriesMode">
+                <option value="single">Обычный разрыв (пристрелка)</option>
+                <option value="equal">Равенство «+» и «–» (ΔД = 0)</option>
+                <option value="preob_plus">Преобладание «+» отн. ДГЦ (−Ск / −1·Вд)</option>
+                <option value="preob_minus">Преобладание «–» отн. БГЦ (+Ск / +1·Вд)</option>
+                <option value="only_plus">Только «+» (все перелёты, −1.5·Ск / −2·Вд)</option>
+                <option value="only_minus">Только «–» (все недолёты, +1.5·Ск / +2·Вд)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="bShellsPerGun">Снарядов на ор. (в серии)</label>
+              <input type="number" id="bShellsPerGun" value="2" min="1" max="20">
+            </div>
+          </div>
+          <div class="checkbox-row" style="margin-top:6px">
+            <label><input type="checkbox" id="bExactPs"> Точный расчёт по координатам (при ПС ≥ 5-00, ст. 98)</label>
+          </div>
+        </div>
+
+        <!-- РЕЖИМ 2: ПКСС -->
+        <div id="pkssModePanel" class="hidden">
+          <div class="form-row">
+            <div class="field">
+              <label for="pRefType">Что вводим?</label>
+              <select id="pRefType">
+                <option value="burst">Отклонение разрыва (где упал)</option>
+                <option value="shift">Перенос огня (куда сдвинуть)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="pNsDir">Север / Юг</label>
+              <select id="pNsDir">
+                <option value="S">Юг</option>
+                <option value="N">Север</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="pNsVal">Метры (С/Ю)</label>
+              <input type="number" id="pNsVal" placeholder="20">
+            </div>
+            <div class="field">
+              <label for="pEwDir">Восток / Запад</label>
+              <select id="pEwDir">
+                <option value="W">Запад</option>
+                <option value="E">Восток</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="pEwVal">Метры (В/З)</label>
+              <input type="number" id="pEwVal" placeholder="15">
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-preview-box" id="burstPreviewBox">
+          <div>Предварительный расчёт корректур:</div>
+          <div class="mono" id="burstPreviewText">—</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="btnApplyBurst" type="button">Применить и записать в таблицу</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="theory.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
