@@ -1053,3 +1053,98 @@ body.theme-theory #btnResetAll {
     padding: 10px 6px;
   }
 }
+
+/* EXPORT & PRINT (PDF) */
+.export-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 8px;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+#printArea {
+  display: none;
+}
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 11pt;
+    line-height: 1.35;
+  }
+  #printArea {
+    background: #fff !important;
+  }
+  body > *:not(#printArea) {
+    display: none !important;
+  }
+  #printArea {
+    display: block !important;
+  }
+  .p-doc-title {
+    font-size: 15pt;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 6pt;
+  }
+  .p-doc-sub {
+    font-size: 10pt;
+    text-align: center;
+    color: #333;
+    margin: 0 0 12pt;
+  }
+  .p-variant {
+    page-break-after: always;
+    break-after: page;
+  }
+  .p-variant:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+  .p-h2 {
+    font-size: 12.5pt;
+    font-weight: 700;
+    margin: 10pt 0 5pt;
+    border-bottom: 1pt solid #000;
+    padding-bottom: 2pt;
+  }
+  .p-grid {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 8pt;
+    font-size: 10pt;
+  }
+  .p-grid td, .p-grid th, .p-table td, .p-table th {
+    border: 0.7pt solid #222;
+    padding: 3.5pt 5pt;
+    text-align: left;
+    vertical-align: top;
+  }
+  .p-grid th, .p-table th {
+    background: #efefef !important;
+    font-weight: 700;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .p-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 6pt;
+    font-size: 9.5pt;
+  }
+  .p-steps {
+    margin: 4pt 0 8pt;
+    padding-left: 16pt;
+    font-size: 10pt;
+  }
+  .p-steps li {
+    margin-bottom: 2pt;
+  }
+}

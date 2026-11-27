@@ -161,6 +161,32 @@
         </div>
       </div>
 
+      <!-- БЛОК ДИСТАНЦИОННОЙ СТРЕЛЬБЫ (ДТ / РВ) -->
+      <div class="card hidden" id="fuzeCalcCard">
+        <div class="card-header">
+          <h2>Дистанционная стрельба (ДТ / РВ — ПСиУО-2020)</h2>
+          <span class="pill" id="fuzeModePill">ДТ</span>
+        </div>
+        <div class="kv-grid">
+          <div class="kv-item">
+            <span class="kv-label">Тип взрывателя</span>
+            <span class="kv-val mono accent-text" id="fuzeTypeVal">—</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-label">Опт. высота (Hопт / Mопт)</span>
+            <span class="kv-val mono accent-text" id="fuzeHoptVal">—</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-label">Поправка Ур возд. / Трубка</span>
+            <span class="kv-val mono" id="fuzeUrCorrVal">—</span>
+          </div>
+          <div class="kv-item">
+            <span class="kv-label">Цена 0-01 Ур / Примечание</span>
+            <span class="kv-val mono" id="fuzeNoteVal">—</span>
+          </div>
+        </div>
+      </div>
+
       <div class="card">
         <div class="card-header">
           <h2>Генерация 1-й команды</h2>
@@ -255,6 +281,7 @@
         <button class="btn btn-primary btn-lg" id="btnOpenBurst" type="button">Разрыв / Корректура</button>
         <button class="btn btn-accent" id="btnFireForEffect" type="button">На поражение</button>
         <button class="btn btn-outline" id="btnRecordEnd" type="button">Стой. Записать</button>
+        <button class="btn btn-outline" id="btnOpenExport" type="button">Экспорт</button>
         <button class="btn btn-ghost" id="btnFinishFire" type="button">Окончить стрельбу</button>
       </div>
     </section>
@@ -430,6 +457,7 @@
         </div>
         <div class="actions-bar" style="margin-top:10px">
           <button class="btn btn-primary" id="btnSolveGeneratedTask" type="button">Рассчитать</button>
+          <button class="btn btn-outline btn-sm" id="btnGenExportTaskPdf" type="button">PDF условия</button>
         </div>
       </div>
 
@@ -438,12 +466,44 @@
         <div class="card-header">
           <h2>Решение и таблица стрельбы (ПСиУО)</h2>
           <div class="ctrl-btns">
+            <button class="btn btn-accent btn-xs" id="btnGenExportSolPdf" type="button">PDF</button>
+            <button class="btn btn-outline btn-xs" id="btnGenExportSolDoc" type="button">Word</button>
             <button class="btn btn-outline btn-xs" id="btnGoToCalc" type="button">В «Расчёт»</button>
             <button class="btn btn-outline btn-xs" id="btnGoToTable" type="button">В «Таблицу»</button>
           </div>
         </div>
         <div id="genSolutionGrid" class="kv-grid mb-12"></div>
         <div id="genSolutionTableWrap" class="table-wrap"></div>
+      </div>
+
+      <!-- МАССОВЫЙ ГЕНЕРАТОР И ЭКСПОРТ В 2 ФАЙЛА -->
+      <div class="card" id="batchExportCard">
+        <div class="card-header">
+          <h2>Массовый экспорт вариантов (2 файла)</h2>
+          <span class="pill" id="batchStatusPill">Не создано</span>
+        </div>
+        <p class="muted-note">Генерирует сразу N вариантов по текущим настройкам (система, ПНЗР/ПКСС, режим стрельбы) и выгружает в 2 отдельных файла: <b>Файл 1 — только условия</b>, <b>Файл 2 — решения и таблицы стрельбы</b>.</p>
+        <div class="form-row">
+          <div class="field">
+            <label for="batchCount">Количество вариантов (1–100)</label>
+            <input type="number" id="batchCount" value="10" min="1" max="100" step="1">
+          </div>
+          <div class="field">
+            <label for="batchFormat">Формат выгрузки</label>
+            <select id="batchFormat">
+              <option value="pdf" selected>PDF (печать / сохранить PDF)</option>
+              <option value="doc">Word (.doc — 2 файла)</option>
+              <option value="html">HTML для PDF (.html — 2 файла)</option>
+              <option value="txt">Текст (.txt — 2 файла)</option>
+            </select>
+          </div>
+        </div>
+        <div class="actions-bar">
+          <button class="btn btn-primary" id="btnBatchGenerate" type="button">Сгенерировать пакет</button>
+          <button class="btn btn-accent btn-sm" id="btnBatchExportTasks" type="button" disabled>Файл 1: Условия</button>
+          <button class="btn btn-accent btn-sm" id="btnBatchExportSolutions" type="button" disabled>Файл 2: Решения</button>
+          <button class="btn btn-outline btn-sm" id="btnBatchExportBoth" type="button" disabled>Скачать оба файла</button>
+        </div>
       </div>
 
       <div class="card">
@@ -513,6 +573,25 @@
 
         <div class="form-row">
           <div class="field">
+            <label for="inFuzeMode">Тип взрывателя (ПСиУО-2020)</label>
+            <select id="inFuzeMode">
+              <option value="impact" selected>Обычный (ударный «О» / «З»)</option>
+              <option value="dt">Дистанционная трубка (ДТ / Т-90)</option>
+              <option value="rv">Радиовзрыватель (РВ / АР-30)</option>
+            </select>
+          </div>
+          <div class="field hidden" id="inTrStartField">
+            <label for="inTrStart">Трубка исчисл. (Тр, дел.)</label>
+            <input type="text" id="inTrStart" placeholder="Напр. 145 (по ТС)">
+          </div>
+          <div class="field hidden" id="inHoptField">
+            <label for="inHopt">Hопт разрыва (м)</label>
+            <input type="number" id="inHopt" value="15" min="5" max="60" step="1">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
             <label for="inDxTys">ΔХтыс (авто для Д-30)</label>
             <input type="number" id="inDxTys" placeholder="Авто или 7" step="0.1" min="1">
           </div>
@@ -534,6 +613,20 @@
         </div>
 
         <div class="form-section-title">3. Данные цели и ОН (формат тыс: 33-98 или 3398)</div>
+        <div class="form-row">
+          <div class="field">
+            <label for="inTargetInputMode">Способ задания цели</label>
+            <select id="inTargetInputMode">
+              <option value="polar" selected>С КНП (Дк, αк, Mк)</option>
+              <option value="rect">Координаты цели (Xц, Yц, hц)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row hidden" id="targetRectRow">
+          <div class="field"><label for="inTargetX">Цель Xц</label><input type="number" id="inTargetX" placeholder="93480"></div>
+          <div class="field"><label for="inTargetY">Цель Yц</label><input type="number" id="inTargetY" placeholder="38093"></div>
+          <div class="field"><label for="inTargetH">Цель hц (м)</label><input type="text" inputmode="text" id="inTargetH" placeholder="95"></div>
+        </div>
         <div class="form-row">
           <div class="field"><label for="inGoalNum">№ цели</label><input type="text" id="inGoalNum" placeholder="103"></div>
           <div class="field"><label for="inGoalType">Характер цели</label><input type="text" id="inGoalType" placeholder="пехота на занятой позиции"></div>
@@ -646,6 +739,21 @@
               <input type="number" id="bShellsPerGun" value="2" min="1" max="20">
             </div>
           </div>
+          <div class="form-row hidden" id="dtHeightPanel" style="margin-top:6px">
+            <div class="field">
+              <label for="bHeightType">Высота разрыва (ДТ)</label>
+              <select id="bHeightType">
+                <option value="none">Без поправки высоты</option>
+                <option value="mils">Замер с КНП (Mр.к, тыс.)</option>
+                <option value="impact">Наземный («Удар» → Ур +)</option>
+                <option value="high">Высокий (→ Ур −)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="bHeightMils">Mр.к (тыс., напр. 0-08)</label>
+              <input type="text" id="bHeightMils" placeholder="0-08">
+            </div>
+          </div>
           <div class="checkbox-row" style="margin-top:6px">
             <label><input type="checkbox" id="bExactPs"> Точный расчёт по координатам (при ПС ≥ 5-00, ст. 98)</label>
           </div>
@@ -699,6 +807,28 @@
     </div>
   </div>
 
+  <!-- МОДАЛЬНОЕ ОКНО 3: ЭКСПОРТ ТЕКУЩЕЙ РАБОТЫ -->
+  <div class="modal-backdrop" id="modalExport" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>Экспорт текущей работы</h3>
+        <button class="btn btn-ghost btn-xs" id="btnCloseExport" type="button">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="muted-note">Выгрузит исходные данные, все расчёты (ПГЗ/ОГЗ, ТС, коэффициенты) и текущую таблицу стрельбы.</p>
+        <div class="export-grid">
+          <button class="btn btn-primary" id="btnExpCurPdf" type="button">PDF (печать / сохранить PDF)</button>
+          <button class="btn btn-accent" id="btnExpCurDoc" type="button">Word (.doc)</button>
+          <button class="btn btn-outline" id="btnExpCurCsv" type="button">Excel (.csv)</button>
+          <button class="btn btn-outline" id="btnExpCurHtml" type="button">HTML (для PDF)</button>
+          <button class="btn btn-outline" id="btnExpCurTxt" type="button">Текст (.txt)</button>
+          <button class="btn btn-ghost" id="btnExpCurJson" type="button">JSON (данные)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="printArea" aria-hidden="true"></div>
   <div class="toast" id="toast"></div>
   <script src="theory.js"></script>
   <script src="script.js"></script>
