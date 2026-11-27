@@ -291,7 +291,7 @@
   const TS_D30_MORT = {"full": {"label": "Полный (мортирная)", "cmdLabel": "Полный", "rows": [[9800, 0, 1163, 27, 20, 100], [10000, 0, 1155, 26, 20, 94], [10200, 0, 1147, 25, 21, 89], [10400, 0, 1139, 24, 21, 85], [10600, 0, 1131, 24, 22, 82], [10800, 0, 1123, 23, 22, 79], [11000, 0, 1114, 23, 23, 76], [11200, 0, 1105, 22, 23, 73], [11400, 0, 1097, 22, 23, 70], [11600, 0, 1088, 21, 24, 67], [11800, 0, 1079, 21, 24, 65], [12000, 0, 1069, 20, 24, 62], [12200, 0, 1059, 20, 25, 60], [12400, 0, 1049, 19, 25, 58], [12600, 0, 1039, 18, 25, 56], [12800, 0, 1029, 18, 26, 54], [13000, 0, 1018, 17, 26, 52], [13200, 0, 1006, 16, 26, 50], [13400, 0, 993, 15, 26, 48], [13600, 0, 980, 14, 27, 46], [13800, 0, 966, 13, 27, 44], [14000, 0, 952, 13, 27, 41], [14200, 0, 935, 12, 27, 39], [14400, 0, 918, 11, 27, 37], [14600, 0, 898, 10, 27, 34], [14800, 0, 874, 9, 28, 32], [15000, 0, 845, 7, 28, 29], [15200, 0, 802, 5, 28, 26]]}, "reduced": {"label": "Уменьшенный (мортирная)", "cmdLabel": "Уменьшенный", "rows": [[8400, 0, 1158, 20, 20, 79], [8600, 0, 1148, 20, 21, 76], [8800, 0, 1138, 20, 22, 72], [9000, 0, 1128, 20, 23, 69], [9200, 0, 1118, 19, 23, 66], [9400, 0, 1107, 19, 24, 63], [9600, 0, 1096, 18, 24, 60], [9800, 0, 1084, 18, 24, 58], [10000, 0, 1072, 17, 25, 56], [10200, 0, 1060, 16, 25, 54], [10400, 0, 1048, 16, 26, 52], [10600, 0, 1035, 15, 26, 50], [10800, 0, 1021, 15, 26, 47], [11000, 0, 1007, 14, 27, 45], [11200, 0, 993, 14, 27, 42], [11400, 0, 977, 13, 27, 40], [11600, 0, 960, 12, 27, 37], [11800, 0, 941, 11, 28, 35], [12000, 0, 921, 10, 28, 33], [12200, 0, 898, 9, 28, 30], [12400, 0, 871, 7, 29, 28], [12600, 0, 837, 6, 29, 25]]}, "1": {"label": "1-й (мортирная)", "cmdLabel": "1", "rows": [[7600, 0, 1157, 17, 20, 75], [7800, 0, 1146, 17, 20, 72], [8000, 0, 1135, 17, 21, 69], [8200, 0, 1123, 17, 21, 66], [8400, 0, 1112, 17, 22, 63], [8600, 0, 1100, 16, 22, 60], [8800, 0, 1088, 16, 23, 57], [9000, 0, 1075, 15, 23, 53], [9200, 0, 1061, 15, 24, 51], [9400, 0, 1047, 14, 24, 49], [9600, 0, 1033, 13, 25, 46], [9800, 0, 1018, 12, 25, 44], [10000, 0, 1002, 12, 26, 41], [10200, 0, 984, 11, 27, 38], [10400, 0, 966, 11, 27, 36], [10600, 0, 945, 10, 27, 34], [10800, 0, 923, 9, 27, 32], [11000, 0, 897, 8, 27, 30], [11200, 0, 866, 6, 28, 27], [11400, 0, 823, 5, 28, 24]]}, "2": {"label": "2-й (мортирная)", "cmdLabel": "2", "rows": [[6600, 0, 1160, 16, 17, 74], [6800, 0, 1148, 16, 18, 70], [7000, 0, 1135, 16, 18, 66], [7200, 0, 1122, 15, 19, 62], [7400, 0, 1108, 15, 20, 59], [7600, 0, 1094, 14, 20, 56], [7800, 0, 1079, 14, 21, 53], [8000, 0, 1064, 13, 21, 50], [8200, 0, 1049, 13, 22, 47], [8400, 0, 1032, 12, 23, 44], [8600, 0, 1014, 12, 23, 41], [8800, 0, 996, 11, 24, 39], [9000, 0, 975, 10, 24, 37], [9200, 0, 953, 9, 25, 35], [9400, 0, 928, 8, 25, 33], [9600, 0, 898, 7, 25, 31], [9800, 0, 860, 6, 26, 29], [10000, 0, 803, 4, 26, 27]]}, "3": {"label": "3-й (мортирная)", "cmdLabel": "3", "rows": [[5400, 0, 1161, 13, 50, 63], [5600, 0, 1145, 13, 53, 59], [5800, 0, 1129, 12, 56, 56], [6000, 0, 1113, 12, 58, 53], [6200, 0, 1096, 12, 60, 50], [6400, 0, 1078, 11, 61, 48], [6600, 0, 1060, 11, 62, 45], [6800, 0, 1040, 10, 63, 43], [7000, 0, 1020, 10, 64, 40], [7200, 0, 997, 9, 65, 37], [7400, 0, 973, 8, 66, 35], [7600, 0, 946, 7, 67, 32], [7800, 0, 915, 7, 68, 29], [8000, 0, 878, 5, 68, 27], [8200, 0, 827, 4, 67, 24]]}, "4": {"label": "4-й (мортирная)", "cmdLabel": "4", "rows": [[4200, 0, 1154, 10, 31, 59], [4400, 0, 1133, 10, 33, 55], [4600, 0, 1111, 9, 34, 51], [4800, 0, 1088, 9, 36, 47], [5000, 0, 1063, 8, 37, 44], [5200, 0, 1037, 8, 39, 41], [5400, 0, 1009, 7, 40, 38], [5600, 0, 979, 6, 40, 34], [5800, 0, 944, 6, 40, 30], [6000, 0, 900, 5, 41, 27], [6200, 0, 841, 3, 41, 24]]}};
   const RIK_LIMITS_D30 = { full: 8600, reduced: 7400, "1": 6600, "2": 6000, "3": 5400, "4": 4200 };
 
-  const TS_2B11 = {"1": {"label": "1-й (400–1400 м)", "cmdLabel": "1", "rows": [[400, 417, 417, 12, 4, 0], [500, 425, 425, 3, 4, 0], [600, 462, 462, 3, 4, 0], [700, 500, 500, 2, 4, 0], [800, 540, 540, 2, 5, 0], [900, 582, 582, 2, 5, 0], [1000, 627, 627, 2, 5, 0], [1100, 678, 678, 2, 6, 0], [1200, 737, 737, 1, 6, 0], [1300, 810, 810, 1, 6, 0], [1400, 927, 927, 1, 7, 0]]}, "2": {"label": "2-й (800–2500 м)", "cmdLabel": "2", "rows": [[800, 417, 417, 7, 6, 0], [900, 431, 431, 5, 6, 0], [1000, 453, 453, 5, 7, 0], [1100, 475, 475, 5, 7, 0], [1200, 497, 497, 4, 7, 0], [1300, 520, 520, 4, 7, 0], [1400, 544, 544, 4, 8, 0], [1500, 568, 568, 4, 8, 0], [1600, 594, 594, 4, 8, 0], [1700, 621, 621, 4, 9, 0], [1800, 649, 649, 3, 9, 0], [1900, 679, 679, 3, 9, 0], [2000, 712, 712, 3, 10, 0], [2100, 749, 749, 2, 10, 0], [2200, 791, 791, 2, 10, 0], [2300, 842, 842, 1, 11, 0], [2400, 917, 917, 1, 11, 0], [2500, 1000, 1000, 1, 12, 0]]}, "3": {"label": "3-й (1100–3400 м)", "cmdLabel": "3", "rows": [[1100, 417, 417, 11, 8, 0], [1200, 426, 426, 7, 8, 0], [1300, 441, 441, 6, 9, 0], [1400, 457, 457, 6, 9, 0], [1500, 473, 473, 6, 9, 0], [1600, 489, 489, 6, 10, 0], [1700, 505, 505, 6, 10, 0], [1800, 522, 522, 6, 10, 0], [1900, 539, 539, 6, 10, 0], [2000, 557, 557, 6, 11, 0], [2100, 575, 575, 5, 11, 0], [2200, 594, 594, 5, 11, 0], [2300, 614, 614, 5, 12, 0], [2400, 634, 634, 5, 12, 0], [2500, 655, 655, 5, 12, 0], [2600, 677, 677, 4, 13, 0], [2700, 701, 701, 4, 13, 0], [2800, 727, 727, 4, 13, 0], [2900, 754, 754, 3, 14, 0], [3000, 785, 785, 3, 14, 0], [3100, 821, 821, 2, 14, 0], [3200, 864, 864, 2, 15, 0], [3300, 925, 925, 1, 15, 0], [3400, 1000, 1000, 1, 15, 0]]}, "4": {"label": "4-й (1400–4300 м)", "cmdLabel": "4", "rows": [[1400, 417, 417, 20, 10, 0], [1500, 422, 422, 8, 10, 0], [1600, 434, 434, 8, 11, 0], [1700, 446, 446, 8, 11, 0], [1800, 459, 459, 8, 11, 0], [1900, 471, 471, 8, 11, 0], [2000, 484, 484, 8, 12, 0], [2100, 497, 497, 8, 12, 0], [2200, 510, 510, 8, 12, 0], [2300, 523, 523, 8, 12, 0], [2400, 536, 536, 7, 13, 0], [2500, 550, 550, 7, 13, 0], [2600, 564, 564, 7, 13, 0], [2700, 578, 578, 7, 14, 0], [2800, 593, 593, 6, 14, 0], [2900, 609, 609, 7, 14, 0], [3000, 624, 624, 6, 15, 0], [3100, 640, 640, 6, 15, 0], [3200, 657, 657, 6, 15, 0], [3300, 675, 675, 6, 16, 0], [3400, 693, 693, 5, 16, 0], [3500, 713, 713, 5, 16, 0], [3600, 733, 733, 5, 17, 0], [3700, 755, 755, 4, 17, 0], [3800, 779, 779, 4, 17, 0], [3900, 806, 806, 3, 18, 0], [4000, 836, 836, 3, 18, 0], [4100, 871, 871, 2, 18, 0], [4200, 921, 921, 1, 19, 0], [4300, 1000, 1000, 1, 19, 0]]}, "5": {"label": "5-й (1700–5200 м)", "cmdLabel": "5", "rows": [[1700, 417, 417, 17, 12, 0], [1800, 423, 423, 10, 12, 0], [1900, 433, 433, 10, 12, 0], [2000, 443, 443, 9, 13, 0], [2100, 454, 454, 10, 13, 0], [2200, 464, 464, 9, 13, 0], [2300, 475, 475, 10, 14, 0], [2400, 485, 485, 9, 14, 0], [2500, 496, 496, 9, 14, 0], [2600, 507, 507, 9, 14, 0], [2700, 518, 518, 9, 15, 0], [2800, 529, 529, 9, 15, 0], [2900, 540, 540, 8, 15, 0], [3000, 552, 552, 8, 16, 0], [3100, 564, 564, 8, 16, 0], [3200, 576, 576, 8, 16, 0], [3300, 588, 588, 8, 16, 0], [3400, 601, 601, 8, 17, 0], [3500, 614, 614, 8, 17, 0], [3600, 627, 627, 7, 17, 0], [3700, 641, 641, 7, 18, 0], [3800, 655, 655, 7, 18, 0], [3900, 669, 669, 7, 18, 0], [4000, 684, 684, 6, 18, 0], [4100, 700, 700, 6, 19, 0], [4200, 717, 717, 6, 19, 0], [4300, 734, 734, 5, 19, 0], [4400, 753, 753, 5, 20, 0], [4500, 773, 773, 5, 20, 0], [4600, 794, 794, 4, 20, 0], [4700, 817, 817, 4, 21, 0], [4800, 843, 843, 3, 21, 0], [4900, 874, 874, 3, 21, 0], [5000, 913, 913, 2, 22, 0], [5100, 976, 976, 4, 22, 0], [5200, 1000, 1000, 4, 22, 0]]}, "6": {"label": "6-й (2000–6000 м)", "cmdLabel": "6", "rows": [[2000, 417, 417, 12, 14, 0], [2100, 425, 425, 11, 14, 0], [2200, 434, 434, 11, 14, 0], [2300, 443, 443, 11, 15, 0], [2400, 452, 452, 11, 15, 0], [2500, 461, 461, 11, 15, 0], [2600, 470, 470, 11, 15, 0], [2700, 479, 479, 11, 16, 0], [2800, 488, 488, 10, 16, 0], [2900, 498, 498, 11, 16, 0], [3000, 507, 507, 11, 16, 0], [3100, 516, 516, 10, 16, 0], [3200, 526, 526, 10, 17, 0], [3300, 536, 536, 10, 17, 0], [3400, 546, 546, 10, 17, 0], [3500, 556, 556, 10, 18, 0], [3600, 566, 566, 9, 18, 0], [3700, 577, 577, 10, 18, 0], [3800, 587, 587, 9, 18, 0], [3900, 598, 598, 9, 19, 0], [4000, 609, 609, 9, 19, 0], [4100, 620, 620, 8, 19, 0], [4200, 632, 632, 8, 20, 0], [4300, 644, 644, 8, 20, 0], [4400, 656, 656, 8, 20, 0], [4500, 669, 669, 8, 20, 0], [4600, 682, 682, 8, 21, 0], [4700, 695, 695, 7, 21, 0], [4800, 709, 709, 7, 21, 0], [4900, 724, 724, 7, 22, 0], [5000, 739, 739, 6, 22, 0], [5100, 755, 755, 6, 22, 0], [5200, 773, 773, 6, 23, 0], [5300, 791, 791, 5, 23, 0], [5400, 811, 811, 5, 23, 0], [5500, 833, 833, 4, 24, 0], [5600, 857, 857, 3, 24, 0], [5700, 886, 886, 3, 24, 0], [5800, 922, 922, 2, 23, 0], [5900, 978, 978, 5, 25, 0], [6000, 1000, 1000, 5, 25, 0]]}, "long": {"label": "Дальнобойный (2400–7300 м)", "cmdLabel": "Дальнобойный", "rows": [[2400, 417, 417, 20, 16, 0], [2500, 422, 422, 14, 16, 0], [2600, 429, 429, 14, 16, 0], [2700, 436, 436, 14, 16, 0], [2800, 443, 443, 14, 16, 0], [2900, 450, 450, 14, 16, 0], [3000, 457, 457, 12, 17, 0], [3100, 465, 465, 14, 17, 0], [3200, 472, 472, 14, 17, 0], [3300, 479, 479, 12, 17, 0], [3400, 487, 487, 14, 17, 0], [3500, 494, 494, 12, 17, 0], [3600, 502, 502, 14, 18, 0], [3700, 509, 509, 12, 18, 0], [3800, 517, 517, 12, 18, 0], [3900, 525, 525, 12, 18, 0], [4000, 533, 533, 14, 18, 0], [4100, 540, 540, 12, 18, 0], [4200, 548, 548, 11, 18, 0], [4300, 557, 557, 12, 19, 0], [4400, 565, 565, 12, 19, 0], [4500, 573, 573, 11, 19, 0], [4600, 582, 582, 12, 19, 0], [4700, 590, 590, 11, 19, 0], [4800, 599, 599, 11, 20, 0], [4900, 608, 608, 11, 20, 0], [5000, 617, 617, 11, 20, 0], [5100, 626, 626, 10, 20, 0], [5200, 636, 636, 11, 20, 0], [5300, 645, 645, 10, 20, 0], [5400, 655, 655, 9, 20, 0], [5500, 666, 666, 10, 21, 0], [5600, 676, 676, 9, 21, 0], [5700, 687, 687, 9, 21, 0], [5800, 698, 698, 8, 21, 0], [5900, 710, 710, 8, 22, 0], [6000, 722, 722, 8, 22, 0], [6100, 734, 734, 8, 22, 0], [6200, 747, 747, 7, 22, 0], [6300, 761, 761, 7, 22, 0], [6400, 776, 776, 7, 22, 0], [6500, 791, 791, 6, 23, 0], [6600, 808, 808, 6, 23, 0], [6700, 826, 826, 5, 23, 0], [6800, 846, 846, 4, 23, 0], [6900, 869, 869, 4, 23, 0], [7000, 896, 896, 3, 23, 0], [7100, 930, 930, 1, 23, 0], [7200, 997, 997, 33, 23, 0], [7300, 1000, 1000, 33, 23, 0]]}};
+  const TS_2B11 = {"1": {"label": "1-й (400–1400 м)", "cmdLabel": "1", "rows": [[400, 417, 417, 12, 4, 0], [500, 425, 425, 3, 4, 0], [600, 462, 462, 3, 4, 0], [700, 500, 500, 2, 4, 0], [800, 540, 540, 2, 5, 0], [900, 582, 582, 2, 5, 0], [1000, 627, 627, 2, 5, 0], [1100, 678, 678, 2, 6, 0], [1200, 737, 737, 1, 6, 0], [1300, 810, 810, 1, 6, 0], [1400, 927, 927, 1, 7, 0]]}, "2": {"label": "2-й (800–2500 м)", "cmdLabel": "2", "rows": [[800, 417, 417, 7, 6, 0], [900, 431, 431, 5, 6, 0], [1000, 453, 453, 5, 7, 0], [1100, 475, 475, 5, 7, 0], [1200, 497, 497, 4, 7, 0], [1300, 520, 520, 4, 7, 0], [1400, 544, 544, 4, 8, 0], [1500, 568, 568, 4, 8, 0], [1600, 594, 594, 4, 8, 0], [1700, 621, 621, 4, 9, 0], [1800, 649, 649, 3, 9, 0], [1900, 679, 679, 3, 9, 0], [2000, 712, 712, 3, 10, 0], [2100, 749, 749, 2, 10, 0], [2200, 791, 791, 2, 10, 0], [2300, 842, 842, 1, 11, 0], [2400, 917, 917, 1, 11, 0], [2500, 1000, 1000, 1, 12, 0]]}, "3": {"label": "3-й (1100–3400 м)", "cmdLabel": "3", "rows": [[1100, 417, 417, 11, 8, 0], [1200, 426, 426, 7, 8, 0], [1300, 441, 441, 6, 9, 0], [1400, 457, 457, 6, 9, 0], [1500, 473, 473, 6, 9, 0], [1600, 489, 489, 6, 10, 0], [1700, 505, 505, 6, 10, 0], [1800, 522, 522, 6, 10, 0], [1900, 539, 539, 6, 10, 0], [2000, 557, 557, 6, 11, 0], [2100, 575, 575, 5, 11, 0], [2200, 594, 594, 5, 11, 0], [2300, 614, 614, 5, 12, 0], [2400, 634, 634, 5, 12, 0], [2500, 655, 655, 5, 12, 0], [2600, 677, 677, 4, 13, 0], [2700, 701, 701, 4, 13, 0], [2800, 727, 727, 4, 13, 0], [2900, 754, 754, 3, 14, 0], [3000, 785, 785, 3, 14, 0], [3100, 821, 821, 2, 14, 0], [3200, 864, 864, 2, 15, 0], [3300, 925, 925, 1, 15, 0], [3400, 1000, 1000, 1, 15, 0]]}, "4": {"label": "4-й (1400–4300 м)", "cmdLabel": "4", "rows": [[1400, 417, 417, 20, 10, 0], [1500, 422, 422, 8, 10, 0], [1600, 434, 434, 8, 11, 0], [1700, 446, 446, 8, 11, 0], [1800, 459, 459, 8, 11, 0], [1900, 471, 471, 8, 11, 0], [2000, 484, 484, 8, 12, 0], [2100, 497, 497, 8, 12, 0], [2200, 510, 510, 8, 12, 0], [2300, 523, 523, 8, 12, 0], [2400, 536, 536, 7, 13, 0], [2500, 550, 550, 7, 13, 0], [2600, 564, 564, 7, 13, 0], [2700, 578, 578, 7, 14, 0], [2800, 593, 593, 6, 14, 0], [2900, 609, 609, 7, 14, 0], [3000, 624, 624, 6, 15, 0], [3100, 640, 640, 6, 15, 0], [3200, 657, 657, 6, 15, 0], [3300, 675, 675, 6, 16, 0], [3400, 693, 693, 5, 16, 0], [3500, 713, 713, 5, 16, 0], [3600, 733, 733, 5, 17, 0], [3700, 755, 755, 4, 17, 0], [3800, 779, 779, 4, 17, 0], [3900, 806, 806, 3, 18, 0], [4000, 836, 836, 3, 18, 0], [4100, 871, 871, 2, 18, 0], [4200, 921, 921, 1, 19, 0], [4300, 1000, 1000, 1, 19, 0]]}, "5": {"label": "5-й (1700–5200 м)", "cmdLabel": "5", "rows": [[1700, 417, 417, 17, 12, 0], [1800, 423, 423, 10, 12, 0], [1900, 433, 433, 10, 12, 0], [2000, 443, 443, 9, 13, 0], [2100, 454, 454, 10, 13, 0], [2200, 464, 464, 9, 13, 0], [2300, 475, 475, 10, 14, 0], [2400, 485, 485, 9, 14, 0], [2500, 496, 496, 9, 14, 0], [2600, 507, 507, 9, 14, 0], [2700, 518, 518, 9, 15, 0], [2800, 529, 529, 9, 15, 0], [2900, 540, 540, 8, 15, 0], [3000, 552, 552, 8, 16, 0], [3100, 564, 564, 8, 16, 0], [3200, 576, 576, 8, 16, 0], [3300, 588, 588, 8, 16, 0], [3400, 601, 601, 8, 17, 0], [3500, 614, 614, 8, 17, 0], [3600, 627, 627, 7, 17, 0], [3700, 641, 641, 7, 18, 0], [3800, 655, 655, 7, 18, 0], [3900, 669, 669, 7, 18, 0], [4000, 684, 684, 6, 18, 0], [4100, 700, 700, 6, 19, 0], [4200, 717, 717, 6, 19, 0], [4300, 734, 734, 5, 19, 0], [4400, 753, 753, 5, 20, 0], [4500, 773, 773, 5, 20, 0], [4600, 794, 794, 4, 20, 0], [4700, 817, 817, 4, 21, 0], [4800, 843, 843, 3, 21, 0], [4900, 874, 874, 3, 21, 0], [5000, 913, 913, 2, 22, 0], [5100, 976, 976, 1, 22, 0], [5200, 1000, 1000, 1, 22, 0]]}, "6": {"label": "6-й (2000–6000 м)", "cmdLabel": "6", "rows": [[2000, 417, 417, 12, 14, 0], [2100, 425, 425, 11, 14, 0], [2200, 434, 434, 11, 14, 0], [2300, 443, 443, 11, 15, 0], [2400, 452, 452, 11, 15, 0], [2500, 461, 461, 11, 15, 0], [2600, 470, 470, 11, 15, 0], [2700, 479, 479, 11, 16, 0], [2800, 488, 488, 10, 16, 0], [2900, 498, 498, 11, 16, 0], [3000, 507, 507, 11, 16, 0], [3100, 516, 516, 10, 16, 0], [3200, 526, 526, 10, 17, 0], [3300, 536, 536, 10, 17, 0], [3400, 546, 546, 10, 17, 0], [3500, 556, 556, 10, 18, 0], [3600, 566, 566, 9, 18, 0], [3700, 577, 577, 10, 18, 0], [3800, 587, 587, 9, 18, 0], [3900, 598, 598, 9, 19, 0], [4000, 609, 609, 9, 19, 0], [4100, 620, 620, 8, 19, 0], [4200, 632, 632, 8, 20, 0], [4300, 644, 644, 8, 20, 0], [4400, 656, 656, 8, 20, 0], [4500, 669, 669, 8, 20, 0], [4600, 682, 682, 8, 21, 0], [4700, 695, 695, 7, 21, 0], [4800, 709, 709, 7, 21, 0], [4900, 724, 724, 7, 22, 0], [5000, 739, 739, 6, 22, 0], [5100, 755, 755, 6, 22, 0], [5200, 773, 773, 6, 23, 0], [5300, 791, 791, 5, 23, 0], [5400, 811, 811, 5, 23, 0], [5500, 833, 833, 4, 24, 0], [5600, 857, 857, 3, 24, 0], [5700, 886, 886, 3, 24, 0], [5800, 922, 922, 2, 23, 0], [5900, 978, 978, 1, 25, 0], [6000, 1000, 1000, 1, 25, 0]]}, "long": {"label": "Дальнобойный (2400–7300 м)", "cmdLabel": "Дальнобойный", "rows": [[2400, 417, 417, 20, 16, 0], [2500, 422, 422, 14, 16, 0], [2600, 429, 429, 14, 16, 0], [2700, 436, 436, 14, 16, 0], [2800, 443, 443, 14, 16, 0], [2900, 450, 450, 14, 16, 0], [3000, 457, 457, 12, 17, 0], [3100, 465, 465, 14, 17, 0], [3200, 472, 472, 14, 17, 0], [3300, 479, 479, 12, 17, 0], [3400, 487, 487, 14, 17, 0], [3500, 494, 494, 12, 17, 0], [3600, 502, 502, 14, 18, 0], [3700, 509, 509, 12, 18, 0], [3800, 517, 517, 12, 18, 0], [3900, 525, 525, 12, 18, 0], [4000, 533, 533, 14, 18, 0], [4100, 540, 540, 12, 18, 0], [4200, 548, 548, 11, 18, 0], [4300, 557, 557, 12, 19, 0], [4400, 565, 565, 12, 19, 0], [4500, 573, 573, 11, 19, 0], [4600, 582, 582, 12, 19, 0], [4700, 590, 590, 11, 19, 0], [4800, 599, 599, 11, 20, 0], [4900, 608, 608, 11, 20, 0], [5000, 617, 617, 11, 20, 0], [5100, 626, 626, 10, 20, 0], [5200, 636, 636, 11, 20, 0], [5300, 645, 645, 10, 20, 0], [5400, 655, 655, 9, 20, 0], [5500, 666, 666, 10, 21, 0], [5600, 676, 676, 9, 21, 0], [5700, 687, 687, 9, 21, 0], [5800, 698, 698, 8, 21, 0], [5900, 710, 710, 8, 22, 0], [6000, 722, 722, 8, 22, 0], [6100, 734, 734, 8, 22, 0], [6200, 747, 747, 7, 22, 0], [6300, 761, 761, 7, 22, 0], [6400, 776, 776, 7, 22, 0], [6500, 791, 791, 6, 23, 0], [6600, 808, 808, 6, 23, 0], [6700, 826, 826, 5, 23, 0], [6800, 846, 846, 4, 23, 0], [6900, 869, 869, 4, 23, 0], [7000, 896, 896, 3, 23, 0], [7100, 930, 930, 1, 23, 0], [7200, 997, 997, 1, 23, 0], [7300, 1000, 1000, 1, 23, 0]]}};
 
   function lookupTs(sysKey, chargeKey, dist, d30Mode) {
     const isMort = sysKey !== "2b11" && d30Mode === "mort";
@@ -361,6 +361,9 @@
       systemName: "122-мм Г Д-30",
       charge: "2",
       d30Mode: "nast",
+      fuzeMode: "impact",
+      trStart: "",
+      hOpt: 15,
       dxTys: 19,
       guns: 4,
       callKnp: "Кама",
@@ -372,6 +375,10 @@
       opX: 95365,
       opY: 42173,
       opH: 125,
+      targetInputMode: "polar",
+      targetX: null,
+      targetY: null,
+      targetH: null,
       goalNum: "103",
       goalType: "пехота на занятой позиции",
       taskType: "Подавить",
@@ -422,7 +429,8 @@
     genD30FireMode: "random",
     activeScenario: null,
     currentGenItem: null,
-    genConditionCollapsed: false
+    genConditionCollapsed: false,
+    batchVariants: []
   };
 
   function $(id) {
@@ -639,18 +647,40 @@
 
   function computeAll() {
     const inp = state.inputs;
-    if (inp.knpX === null || inp.knpY === null || inp.opX === null || inp.opY === null || inp.dk === null || inp.ak === null) {
-      clearCalcUI();
-      return;
+    const isRect = inp.targetInputMode === "rect";
+    if (isRect) {
+      if (inp.opX === null || inp.opY === null || inp.targetX === null || inp.targetY === null) {
+        clearCalcUI();
+        return;
+      }
+    } else {
+      if (inp.knpX === null || inp.knpY === null || inp.opX === null || inp.opY === null || inp.dk === null || inp.ak === null) {
+        clearCalcUI();
+        return;
+      }
     }
     const knpH = inp.knpH !== null ? inp.knpH : 0;
     const opH = inp.opH !== null ? inp.opH : 0;
     const onVal = inp.on !== null ? inp.on : 0;
 
-    const akRad = milsToRad(inp.ak);
-    const xt = inp.knpX + inp.dk * Math.cos(akRad);
-    const yt = inp.knpY + inp.dk * Math.sin(akRad);
-    const ht = Math.round(knpH + 0.001 * inp.dk * (inp.mk || 0));
+    let xt, yt, ht;
+    if (isRect) {
+      xt = inp.targetX;
+      yt = inp.targetY;
+      ht = inp.targetH !== null ? Math.round(inp.targetH) : opH;
+      if (inp.knpX !== null && inp.knpY !== null) {
+        inp.dk = Math.round(Math.hypot(xt - inp.knpX, yt - inp.knpY));
+        inp.ak = radToMils(Math.atan2(yt - inp.knpY, xt - inp.knpX));
+      } else {
+        inp.dk = 0;
+        inp.ak = 0;
+      }
+    } else {
+      const akRad = milsToRad(inp.ak);
+      xt = inp.knpX + inp.dk * Math.cos(akRad);
+      yt = inp.knpY + inp.dk * Math.sin(akRad);
+      ht = Math.round(knpH + 0.001 * inp.dk * (inp.mk || 0));
+    }
 
     const dx = xt - inp.opX;
     const dy = yt - inp.opY;
@@ -678,18 +708,20 @@
     const derivCorr = inp.useDeriv && tsData ? -tsData.z : 0;
     const deltai = normDelta(deltact + inp.ddeltaCis + derivCorr);
 
-    const dh = (inp.knpH !== null && inp.opH !== null) ? (ht - inp.opH) : 0;
+    const hasHeight = isRect ? (inp.targetH !== null && inp.opH !== null) : (inp.knpH !== null && inp.opH !== null);
+    const dh = hasHeight ? (ht - inp.opH) : 0;
     const urOffset = dct > 0 ? Math.round(dh / (0.001 * dct)) : 0;
     const ur = 3000 + urOffset;
 
     const effectivePr = inp.startPr > 0 ? inp.startPr : (tsData ? tsData.prTys : 0);
 
-    const kuRaw = dct > 0 ? inp.dk / dct : 0;
+    const hasKnp = inp.knpX !== null && inp.knpY !== null;
+    const kuRaw = (dct > 0 && hasKnp) ? inp.dk / dct : 0;
     const ku = Math.round(kuRaw * 10) / 10;
 
-    const ps = normDelta(inp.ak - act);
-    const opSide = ps >= 0 ? "ОП справа" : "ОП слева";
-    const shu = dct > 0 ? Math.round(Math.abs(ps) / (0.01 * dct)) : 0;
+    const ps = hasKnp ? normDelta(inp.ak - act) : 0;
+    const opSide = !hasKnp ? "КНП не задан" : (ps >= 0 ? "ОП справа" : "ОП слева");
+    const shu = (dct > 0 && hasKnp) ? Math.round(Math.abs(ps) / (0.01 * dct)) : 0;
 
     let fcMeters = 0;
     const fcStr = String(inp.fcRaw || "0").trim();
@@ -732,9 +764,13 @@
       skTys: skTys,
       iv: iv,
       useTwoUglom: useTwoUglom,
-      uglomShift: uglomShift
+      uglomShift: uglomShift,
+      hOpt: inp.fuzeMode === "rv" ? 10 : (inp.hOpt || 15),
+      mOpt: dct > 0 ? Math.max(1, Math.round((inp.fuzeMode === "rv" ? 10 : (inp.hOpt || 15)) / (0.001 * dct))) : 0,
+      mPerMil: dct > 0 ? (0.001 * dct).toFixed(1) : "0"
     };
 
+    if ($("bExactPs")) $("bExactPs").checked = Math.abs(ps) >= 500;
     if (!state.prkManual && state.calc) { state.prkAngle = state.calc.ps; state.prkAngleRight = Math.round(state.calc.ps * 0.6); state.prkRulerX = 0; }
     renderCalcPanel();
     renderPrkPanel();
@@ -750,7 +786,7 @@
 
     $("headerTaskSummary").textContent =
       inp.systemName + " • Цель " + inp.goalNum + " • " + inp.callKnp + " / " + inp.callOp;
-    $("outKnp").textContent = inp.knpX + " / " + inp.knpY + " / " + (inp.knpH !== null ? inp.knpH : "—");
+    $("outKnp").textContent = (inp.knpX !== null ? inp.knpX : "—") + " / " + (inp.knpY !== null ? inp.knpY : "—") + " / " + (inp.knpH !== null ? inp.knpH : "—");
     $("outOp").textContent = inp.opX + " / " + inp.opY + " / " + (inp.opH !== null ? inp.opH : "—");
     $("outTargetXY").textContent = c.xt + " / " + c.yt + " / " + c.ht;
     $("outDct").textContent = c.dct + " м";
@@ -766,6 +802,23 @@
     $("outSk").textContent = inp.gc !== null ? (c.skMeters + " м (" + c.skTys + " тыс.)") : "—";
     $("outIv").textContent = fmtMils(c.iv, false);
     $("outOpSidePill").textContent = c.opSide;
+
+    if ($("fuzeCalcCard")) {
+      const isDt = inp.fuzeMode === "dt";
+      const isRv = inp.fuzeMode === "rv";
+      $("fuzeCalcCard").classList.toggle("hidden", !isDt && !isRv);
+      if (isDt || isRv) {
+        $("fuzeModePill").textContent = isDt ? "ДТ (воздушный)" : "РВ (автономный)";
+        $("fuzeTypeVal").textContent = isDt ? "Дистанционная трубка (Т-90 / ДТМ)" : "Радиовзрыватель (АР-30, кран «В»)";
+        $("fuzeHoptVal").textContent = c.hOpt + " м (" + fmtMils(c.mOpt, false) + " тыс.)";
+        $("fuzeUrCorrVal").textContent = isDt
+          ? ("Ур +" + fmtMils(c.mOpt, false) + " → " + fmtMils(c.ur + c.mOpt, false) + (inp.trStart ? " | Тр " + inp.trStart : " | Тр по ТС"))
+          : "Трубка не нужна (при «О»→«В»: Пр +1…+2 тыс.)";
+        $("fuzeNoteVal").textContent = isDt
+          ? ("0-01 Ур = " + c.mPerMil + " м высоты | Удар → Ур +0-04")
+          : "Высота 5–15 м авто | Не применять на рикошет и в лесу";
+      }
+    }
 
     if (ts) {
       $("tsCard").classList.remove("hidden");
@@ -787,10 +840,11 @@
     const onVal = inp.on !== null ? inp.on : 0;
 
     const formulas = {
-      f_outTargetXY:
-        "Xц = Xкнп + Дк·cos(αк) = " + inp.knpX + " + " + inp.dk + "·cos(" + akDeg + "°) = " + c.xt +
-        "<br>Yц = Yкнп + Дк·sin(αк) = " + inp.knpY + " + " + inp.dk + "·sin(" + akDeg + "°) = " + c.yt +
-        (inp.mk ? "<br>hц = hкнп + 0.001·Дк·Mк = " + c.ht + " м" : ""),
+      f_outTargetXY: inp.targetInputMode === "rect"
+        ? ("Заданы напрямую: Xц = " + c.xt + ", Yц = " + c.yt + ", hц = " + c.ht + " м" + (inp.knpX !== null ? ("<br>От КНП: Дк = " + inp.dk + " м, αк = " + fmtMils(inp.ak, false)) : ""))
+        : ("Xц = Xкнп + Дк·cos(αк) = " + inp.knpX + " + " + inp.dk + "·cos(" + akDeg + "°) = " + c.xt +
+          "<br>Yц = Yкнп + Дк·sin(αк) = " + inp.knpY + " + " + inp.dk + "·sin(" + akDeg + "°) = " + c.yt +
+          (inp.mk ? "<br>hц = hкнп + 0.001·Дк·Mк = " + c.ht + " м" : "")),
       f_outDct:
         "ΔX = " + c.xt + " − " + inp.opX + " = " + dxT + "; ΔY = " + c.yt + " − " + inp.opY + " = " + dyT +
         "<br>Дцт = √(ΔX² + ΔY²) = √(" + dxT + "² + " + dyT + "²) = " + c.dct + " м",
@@ -838,7 +892,14 @@
   function updateCmd1Preview() {
     const inp = state.inputs;
     const shell = $("cmd1Shell").value.trim() || "ОФ";
-    const fuze = (!isMortarMode() && inp.d30Mode === "rik") ? "З" : ($("cmd1Fuze").value.trim() || "О");
+    let fuze = (!isMortarMode() && inp.d30Mode === "rik") ? "З" : ($("cmd1Fuze").value.trim() || "О");
+    let trNote = "";
+    if (inp.fuzeMode === "dt") {
+      if (fuze === "О" || fuze === "З") fuze = "Т-90";
+      trNote = inp.trStart ? (" Тр. " + inp.trStart + ".") : " Тр. (по ТС).";
+    } else if (inp.fuzeMode === "rv") {
+      if (fuze === "О" || fuze === "З") fuze = "АР-30 (В)";
+    }
     const chargeKey = $("cmd1Charge").value;
     const tsDict = state.inputs.systemKey === "2b11" ? TS_2B11 : TS_D30;
     const chargeLabel = tsDict[chargeKey] ? tsDict[chargeKey].cmdLabel : chargeKey;
@@ -848,7 +909,7 @@
     const text =
       "«" + inp.callKnp + "». Стой. Цель " + inp.goalNum + "-я, " +
       inp.goalType + ". " + inp.taskType + ". " + ammoWord + " «" + shell + "». Взр. «" +
-      fuze + "». Зар. " + chargeLabel + "." + modeNote + " Шк. Тыс. Основному 1 " + shotWord + ". Огонь.";
+      fuze + "»." + trNote + " Зар. " + chargeLabel + "." + modeNote + " Шк. Тыс. Основному 1 " + shotWord + ". Огонь.";
     $("cmd1Preview").value = text;
   }
 
@@ -909,7 +970,7 @@
         const prText = gcV < 100
           ? ("1 уст.: Пр " + state.currentPr)
           : ("3 уст. (Ск " + skT + "): Пр " + (state.currentPr - skT) + " / " + state.currentPr + " / " + (state.currentPr + skT));
-        const ivT = state.calc.iv > 0 ? ("Iв " + fmtMils(state.calc.iv, false)) : "Сосредоточ.";
+        const ivT = state.calc.fcMeters <= 50 ? "Сосредоточ." : (state.calc.iv > 0 ? ("Iв " + fmtMils(state.calc.iv, false)) : "Параллельн.");
         const ugT = state.calc.useTwoUglom ? ("Углом. 2 (±" + fmtMils(state.calc.uglomShift, false) + ")") : "Углом. 1";
         ffeBar.textContent = "Поражение: " + prText + " • " + ivT + " • " + ugT;
         ffeBar.classList.remove("hidden");
@@ -960,6 +1021,7 @@
       } else if (typeof r.dPr === "number") {
         pr += r.dPr;
         napr += (r.beta || 0);
+        if (typeof r.dUr === "number") ur += r.dUr;
       }
       if (!r.isSummaryRow && r.rashod !== "") {
         rashodSum += (parseInt(r.rashod, 10) || 0);
@@ -983,6 +1045,14 @@
     state.seenMinus = seenM;
     state.readyForEffect = ready;
     state.ffeActive = ffeOn;
+    state.forkAlreadyHalved = false;
+    state.lastBurst = null;
+    if (!(seenP && seenM) && state.tsData && state.tsData.vd) {
+      const dxStep = Math.max(1, state.inputs.dxTys || 10);
+      const evenStep = 2 * dxStep;
+      const fork8 = Math.max(evenStep, Math.round((8 * state.tsData.vd) / evenStep) * evenStep);
+      $("bForkStep").value = String(fork8);
+    }
     state.burstTapCount = 0;
     clearTimeout(state.burstTapTimer);
     $("btnOpenBurst").textContent = "Разрыв / Корректура";
@@ -1125,11 +1195,29 @@
         dPr = Math.round(mortSign * (-deltaD / dxTys));
       }
 
+      let dUr = 0;
+      let hObs = "";
+      if (state.inputs.fuzeMode === "dt" && $("bHeightType")) {
+        const hType = $("bHeightType").value;
+        if (hType === "mils") {
+          const mRk = Math.abs(parseMils($("bHeightMils").value));
+          const mR = Math.round(mRk * c.ku);
+          dUr = c.mOpt - mR;
+          hObs = " В " + fmtMils(mRk, false);
+        } else if (hType === "impact") {
+          dUr = Math.max(4, c.mOpt || 4);
+          hObs = " Удар";
+        } else if (hType === "high") {
+          dUr = -Math.max(3, Math.round((c.mOpt || 4) * 0.75));
+          hObs = " Высокий";
+        }
+      }
       return {
         valid: true,
-        obsText: obsStr.trim(),
+        obsText: (obsStr.trim() + hObs).trim(),
         beta: beta,
         dPr: dPr,
+        dUr: dUr,
         deltaD: deltaD
       };
     } else {
@@ -1180,9 +1268,13 @@
     const newPr = state.currentPr + res.dPr;
     const newNapr = state.currentNapr + res.beta;
     const psWarn = state.calc && Math.abs(state.calc.ps) >= 500 ? " | ⚠ ПС≥5-00 (ст.98: ПРК/ПУО)" : "";
+    if ($("dtHeightPanel")) {
+      $("dtHeightPanel").classList.toggle("hidden", state.inputs.fuzeMode !== "dt");
+    }
+    const urPart = res.dUr ? (" | ΔУр: " + fmtMils(res.dUr, true) + " → Ур " + fmtMils(state.currentUr + res.dUr, false)) : "";
     $("burstPreviewText").textContent =
       "ΔХтыс=" + state.inputs.dxTys + "м | ΔПр: " + signPr + " тыс. (ΔД " + res.deltaD + " м) → Пр " + newPr +
-      " | β: " + fmtMils(res.beta, true) + " → Напр " + fmtMils(newNapr, true) + psWarn;
+      " | β: " + fmtMils(res.beta, true) + " → Напр " + fmtMils(newNapr, true) + urPart + psWarn;
   }
 
   function applyBurstCorrection() {
@@ -1211,7 +1303,8 @@
       if (rSign === "-") state.seenMinus = true;
 
       const sideRaw = Math.abs(parseMils($("bDirVal").value));
-      const measuredOk = rMetersRaw !== "" && Math.abs(res.deltaD) <= 200 && sideRaw <= 20;
+      const maxMeasuredD = gcVal < 100 ? 100 : 200;
+      const measuredOk = rMetersRaw !== "" && Math.abs(res.deltaD) <= maxMeasuredD && sideRaw <= 20;
       const dxStep = Math.max(1, state.inputs.dxTys || 10);
       const nextFork = Math.max(2 * dxStep, Math.round(forkStep / 2));
       const bracketOk = state.seenPlus && state.seenMinus && (forkStep / 2) <= ffeThreshold;
@@ -1234,7 +1327,7 @@
     const shellsPerGun = Math.max(1, parseInt($("bShellsPerGun").value, 10) || 2);
     const numUstRange = gcVal < 100 ? 1 : 3;
     const numUstDir = state.calc.useTwoUglom ? 2 : 1;
-    const ivText = state.calc.iv > 0 ? ("Iв " + fmtMils(state.calc.iv, false) + ". ") : "Сосредоточенный. ";
+    const ivText = state.calc.fcMeters <= 50 ? "Сосредоточенный. " : (state.calc.iv > 0 ? ("Iв " + fmtMils(state.calc.iv, false) + ". ") : "Веер параллельный. ");
     const ugText = state.calc.useTwoUglom ? ("Углом. 2 (±" + fmtMils(state.calc.uglomShift, false) + "). ") : "";
     let cmdStr = isMortarMode() ? "Осн. 1 мин. Ог." : "Осн. 1 сн. Ог.";
     let shotCount = 1;
@@ -1252,18 +1345,22 @@
       state.ffeActive = true;
     }
 
+    const dUrVal = res.dUr || 0;
     state.currentPr += res.dPr;
+    state.currentUr += dUrVal;
     state.currentNapr += res.beta;
     state.totalRashod += shotCount;
 
     const signPr = res.dPr > 0 ? "+" + res.dPr : String(res.dPr);
     const rowPrText = mode === "battery" ? String(state.currentPr) : signPr;
+    const rowUrText = dUrVal !== 0 ? (mode === "battery" ? fmtMils(state.currentUr, false) : fmtMils(dUrVal, true)) : "";
     const rowNaprText = mode === "battery" ? fmtMils(state.currentNapr, true) : fmtMils(res.beta, true);
 
     state.lastBurst = {
       obsText: res.obsText,
       beta: res.beta,
       dPr: res.dPr,
+      dUr: dUrVal,
       deltaD: res.deltaD
     };
 
@@ -1271,11 +1368,12 @@
       num: state.rows.length + 1,
       cmd: cmdStr,
       pr: rowPrText,
-      ur: "",
+      ur: rowUrText,
       napr: rowNaprText,
       obs: "",
       rashod: shotCount,
       dPr: res.dPr,
+      dUr: dUrVal,
       beta: res.beta,
       fireMode: mode
     });
@@ -1813,6 +1911,21 @@
       }
     ];
 
+    if (inp.fuzeMode === "dt" && c) {
+      part2Calc.push({
+        t: "Корректура высоты разрыва (ДТ / ПСиУО-2020)",
+        f: "Mр = Mр.к × " + ex.ku + " | ΔУр = " + fmtMils(c.mOpt, false) + " − Mр",
+        b: "При стрельбе с дистанционной трубкой переводим измеренную с КНП высоту разрыва Mр.к в тысячные от ОП (умножая на <b>Ку</b>). Оптимальная высота <b>" + c.hOpt + " м (" + fmtMils(c.mOpt, false) + ")</b>. При наземных разрывах («Удар») увеличиваем Уровень на +0-04 (или уменьшаем трубку на 2–4 дел.).",
+        keys: "<b>1 тыс. Уровня</b> на вашей дальности меняет высоту разрыва на <b>" + c.mPerMil + " м</b>."
+      });
+    } else if (inp.fuzeMode === "rv") {
+      part2Calc.push({
+        t: "Переход на поражение с радиовзрывателем (РВ / ПСиУО-2020)",
+        f: "Взр. АР-30 (В) | Высота 5–15 м авто",
+        b: "Пристрелка по дальности и направлению ведётся как с обычным взрывателем (трубка и пристрелка высоты не нужны). При переходе на поражение переводят кран на <b>«В»</b> (воздушный), на настильных траекториях при необходимости добавляют +1…+2 тыс. в прицел.",
+        keys: "<b>Важно:</b> не применять на рикошет, через густой лес и при сильных помехах РЭБ."
+      });
+    }
     const list2 = state.learnTool === "calc" ? part2Calc : part2Prk;
     $("learnPart2").innerHTML = buildAccordionHtml(list2);
     attachAccordionEvents("learnPart2");
@@ -2171,6 +2284,7 @@
     $("inGoalNum").value = t.goalNum;
     $("inGoalType").value = t.goalType;
     $("inTaskType").value = t.taskType;
+    if ($("inTargetInputMode")) { $("inTargetInputMode").value = "polar"; syncTargetInputModeUI(); }
     $("inDk").value = t.dk;
     $("inAk").value = t.ak;
     $("inOn").value = t.on;
@@ -2296,7 +2410,7 @@
       const gcVal = inp.gc !== null ? inp.gc : 100;
       const numUstRange = gcVal < 100 ? 1 : 3;
       const numUstDir = c.useTwoUglom ? 2 : 1;
-      const ivText = c.iv > 0 ? ("Iв " + fmtMils(c.iv, false) + ". ") : "Сосредоточенный. ";
+      const ivText = c.fcMeters <= 50 ? "Сосредоточенный. " : (c.iv > 0 ? ("Iв " + fmtMils(c.iv, false) + ". ") : "Веер параллельный. ");
       const ugText = c.useTwoUglom ? ("Углом. 2 (±" + fmtMils(c.uglomShift, false) + "). ") : "";
       const ffeCmd = gcVal < 100
         ? ("Батарее. " + ivText + ugText + "по 2" + ffeShotW)
@@ -2502,6 +2616,9 @@
       systemName: opt ? opt.getAttribute("data-name") : "Орудие",
       charge: $("inCharge").value,
       d30Mode: $("inD30Mode") ? $("inD30Mode").value : "nast",
+      fuzeMode: $("inFuzeMode") ? $("inFuzeMode").value : "impact",
+      trStart: $("inTrStart") ? $("inTrStart").value.trim() : "",
+      hOpt: numOrNull("inHopt") || 15,
       dxTys: parseFloat($("inDxTys").value) || 7,
       guns: parseInt($("inGuns").value, 10) || 4,
       callKnp: $("inCallKnp").value.trim() || "КНП",
@@ -2513,6 +2630,10 @@
       opX: numOrNull("inOpX"),
       opY: numOrNull("inOpY"),
       opH: numOrNull("inOpH"),
+      targetInputMode: $("inTargetInputMode") ? $("inTargetInputMode").value : "polar",
+      targetX: numOrNull("inTargetX"),
+      targetY: numOrNull("inTargetY"),
+      targetH: numOrNull("inTargetH"),
       goalNum: $("inGoalNum").value.trim() || "—",
       goalType: $("inGoalType").value.trim() || "цель",
       taskType: $("inTaskType").value.trim() || "Подавить",
@@ -2531,7 +2652,17 @@
     };
   }
 
+  function syncTargetInputModeUI() {
+    const isRect = $("inTargetInputMode") && $("inTargetInputMode").value === "rect";
+    if ($("targetRectRow")) $("targetRectRow").classList.toggle("hidden", !isRect);
+    ["inDk", "inAk", "inMk"].forEach(function (id) {
+      const el = $(id);
+      if (el && el.closest(".field")) el.closest(".field").classList.toggle("hidden", isRect);
+    });
+  }
+
   function loadPreset(name) {
+    if ($("inTargetInputMode")) { $("inTargetInputMode").value = "polar"; syncTargetInputModeUI(); }
     if (name === "variant3") {
       $("inSystem").value = "d30";
       syncChargeOptions(false);
@@ -2596,6 +2727,558 @@
     computeAll();
     saveWorkState();
     showToast("Пример загружен (ТС Д-30)");
+  }
+
+  // --- ЭКСПОРТ (PDF / WORD / EXCEL / HTML / TXT / JSON) И МАССОВЫЙ ГЕНЕРАТОР ---
+  const EXPORT_INLINE_CSS =
+    "body{font-family:'Times New Roman',Georgia,serif;color:#000;background:#fff;margin:14mm;font-size:11pt;line-height:1.35;}" +
+    ".p-doc-title{font-size:15pt;font-weight:700;text-align:center;margin:0 0 6pt;}" +
+    ".p-doc-sub{font-size:10pt;text-align:center;color:#333;margin:0 0 12pt;}" +
+    ".p-h2{font-size:12.5pt;font-weight:700;margin:10pt 0 5pt;border-bottom:1pt solid #000;padding-bottom:2pt;}" +
+    ".p-grid,.p-table{width:100%;border-collapse:collapse;margin:5pt 0 8pt;font-size:9.5pt;}" +
+    ".p-grid td,.p-grid th,.p-table td,.p-table th{border:1px solid #222;padding:4pt 5pt;text-align:left;vertical-align:top;}" +
+    ".p-grid th,.p-table th{background:#efefef;font-weight:700;}" +
+    ".p-steps{margin:4pt 0 8pt;padding-left:18pt;}" +
+    ".p-variant{page-break-after:always;break-after:page;}" +
+    ".p-variant:last-child{page-break-after:auto;break-after:auto;}" +
+    ".no-print{margin-bottom:12pt;padding:8pt;background:#f3f4f6;border:1px solid #ccc;text-align:center;}" +
+    "@media print{.no-print{display:none!important;}body{margin:10mm;}}";
+
+  function downloadFile(filename, content, mimeType) {
+    if (window.AndroidBridge && typeof window.AndroidBridge.saveFile === "function") {
+      window.AndroidBridge.saveFile(filename, content, mimeType.split(";")[0]);
+      return;
+    }
+    try {
+      const blob = new Blob([content], { type: mimeType });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function () {
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      }, 400);
+    } catch (e) {
+      showToast("Ошибка сохранения файла");
+    }
+  }
+
+  function wrapStandaloneHtml(title, bodyHtml, withPrintBtn) {
+    const bar = withPrintBtn
+      ? '<div class="no-print"><button onclick="window.print()" style="padding:6pt 14pt;font-size:11pt;cursor:pointer;">Печать / Сохранить в PDF</button></div>'
+      : "";
+    return "<!DOCTYPE html><html lang='ru'><head><meta charset='UTF-8'><title>" + escapeHtml(title) +
+      "</title><style>" + EXPORT_INLINE_CSS + "</style></head><body>" + bar + bodyHtml + "</body></html>";
+  }
+
+  function wrapWordDoc(title, bodyHtml) {
+    return "<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>" +
+      "<head><meta charset='UTF-8'><title>" + escapeHtml(title) + "</title><style>" + EXPORT_INLINE_CSS + "</style></head><body>" + bodyHtml + "</body></html>";
+  }
+
+  function printHtmlDocument(title, bodyHtml) {
+    const area = $("printArea");
+    if (!area) return;
+    area.innerHTML = bodyHtml;
+    const prevTitle = document.title;
+    document.title = title;
+    setTimeout(function () {
+      if (window.AndroidBridge && typeof window.AndroidBridge.printPdf === "function") {
+        window.AndroidBridge.printPdf(title);
+      } else {
+        window.print();
+      }
+      setTimeout(function () {
+        document.title = prevTitle;
+      }, 600);
+    }, 100);
+  }
+
+  function buildCurrentWorkHtml() {
+    const inp = state.inputs;
+    const c = state.calc;
+    const ts = state.tsData;
+    const chDict = inp.systemKey === "2b11" ? TS_2B11 : TS_D30;
+    const chLabel = chDict[inp.charge] ? chDict[inp.charge].label : inp.charge;
+    const modeTxt = inp.systemKey === "2b11" ? "Миномёт" : (inp.d30Mode === "mort" ? "Мортирная" : (inp.d30Mode === "rik" ? "Рикошет" : "Настильная"));
+
+    let h = '<div class="p-doc-title">АРМ СОБ — Огневая задача (Цель ' + escapeHtml(inp.goalNum) + ')</div>';
+    h += '<div class="p-doc-sub">' + escapeHtml(inp.systemName + " • Заряд: " + chLabel + " • " + modeTxt + " • Орудий: " + inp.guns) + '</div>';
+
+    h += '<div class="p-h2">1. Исходные данные</div><table class="p-grid"><tbody>';
+    h += '<tr><th>КНП (X / Y / h)</th><td>' + escapeHtml((inp.knpX !== null ? inp.knpX : "—") + " / " + (inp.knpY !== null ? inp.knpY : "—") + " / " + (inp.knpH !== null ? inp.knpH : "—")) + '</td><th>ОП (X / Y / h)</th><td>' + escapeHtml((inp.opX !== null ? inp.opX : "—") + " / " + (inp.opY !== null ? inp.opY : "—") + " / " + (inp.opH !== null ? inp.opH : "—")) + '</td></tr>';
+    h += '<tr><th>Цель / Задача</th><td>' + escapeHtml("№" + inp.goalNum + ", " + inp.goalType + " (" + inp.taskType + ")") + '</td><th>Позывные</th><td>' + escapeHtml(inp.callKnp + " / " + inp.callOp + " / " + inp.callCmd) + '</td></tr>';
+    h += '<tr><th>Дк / αк / Mк</th><td>' + escapeHtml((inp.dk !== null ? inp.dk + " м" : "—") + " / " + (inp.ak !== null ? fmtMils(inp.ak, false) : "—") + " / " + (inp.mk || 0)) + '</td><th>ОН / Фц / Гц / Фб</th><td>' + escapeHtml((inp.on !== null ? fmtMils(inp.on, false) : "—") + " / " + (inp.fcRaw || "—") + " / " + (inp.gc !== null ? inp.gc + " м" : "—") + " / " + inp.fb + " м") + '</td></tr>';
+    h += '<tr><th>ΔДцис / Δδиис</th><td>' + escapeHtml(inp.ddCis + " м / " + fmtMils(inp.ddeltaCis, true)) + '</td><th>Деривация Z</th><td>' + (inp.useDeriv ? "Учтена" : "Не учтена") + '</td></tr>';
+    h += '</tbody></table>';
+
+    if (c) {
+      h += '<div class="p-h2">2. Расчётные данные и коэффициенты</div><table class="p-grid"><tbody>';
+      h += '<tr><th>Координаты цели (Xц / Yц / hц)</th><td>' + c.xt + ' / ' + c.yt + ' / ' + c.ht + ' м</td><th>Дцт / αцт / δцт</th><td>' + c.dct + ' м / ' + fmtMils(c.act, false) + ' / ' + fmtMils(c.deltact, true) + '</td></tr>';
+      h += '<tr><th>Ди / δи</th><td>' + c.di + ' м / ' + fmtMils(c.deltai, true) + '</td><th>Ур / Пр</th><td>' + fmtMils(c.ur, false) + ' / ' + c.effectivePr + ' (ΔХтыс=' + inp.dxTys + ' м' + (ts ? ', Вд=' + ts.vd + ' м' : '') + ')</td></tr>';
+      h += '<tr><th>Ку / ПС / Шу</th><td>' + c.ku.toFixed(1) + ' / ' + fmtMils(Math.abs(c.ps), false) + ' (' + escapeHtml(c.opSide) + ') / ' + fmtMils(c.shu, false) + '</td><th>Ск / Iв</th><td>' + (inp.gc !== null ? c.skMeters + ' м (' + c.skTys + ' тыс.)' : '—') + ' / ' + fmtMils(c.iv, false) + (c.useTwoUglom ? ' (2 углом.)' : '') + '</td></tr>';
+      h += '</tbody></table>';
+    }
+
+    h += '<div class="p-h2">3. Таблица стрельбы (Расход: ' + state.totalRashod + ')</div>';
+    if (state.rows.length > 0) {
+      h += '<table class="p-table"><thead><tr><th>№</th><th>Команда</th><th>Пр</th><th>Ур</th><th>Напр</th><th>Наблюдения</th><th>Расход</th></tr></thead><tbody>';
+      state.rows.forEach(function (r) {
+        h += '<tr><td>' + r.num + '</td><td>' + escapeHtml(r.cmd) + '</td><td>' + escapeHtml(r.pr) + '</td><td>' + escapeHtml(r.ur) + '</td><td>' + escapeHtml(r.napr) + '</td><td>' + escapeHtml(r.obs) + '</td><td>' + escapeHtml(String(r.rashod)) + '</td></tr>';
+      });
+      h += '</tbody></table>';
+    } else {
+      h += '<p>Таблица стрельбы пока пуста.</p>';
+    }
+    return h;
+  }
+
+  function buildCurrentWorkCsv() {
+    const inp = state.inputs;
+    const c = state.calc;
+    const esc = function (v) { return '"' + String(v === null || v === undefined ? "" : v).replace(/"/g, '""') + '"'; };
+    const lines = [];
+    lines.push(["АРМ СОБ", inp.systemName, "Цель " + inp.goalNum, inp.goalType].map(esc).join(";"));
+    if (c) {
+      lines.push(["Xц", c.xt, "Yц", c.yt, "hц", c.ht, "Дцт", c.dct, "αцт", fmtMils(c.act, false), "δцт", fmtMils(c.deltact, true)].map(esc).join(";"));
+      lines.push(["Ди", c.di, "δи", fmtMils(c.deltai, true), "Ур", fmtMils(c.ur, false), "Пр", c.effectivePr, "Ку", c.ku.toFixed(1), "ПС", fmtMils(c.ps, true), "Шу", fmtMils(c.shu, false)].map(esc).join(";"));
+    }
+    lines.push("");
+    lines.push(["№", "Команда", "Пр", "Ур", "Напр", "Наблюдения", "Расход"].map(esc).join(";"));
+    state.rows.forEach(function (r) {
+      lines.push([r.num, r.cmd, r.pr, r.ur, r.napr, r.obs, r.rashod].map(esc).join(";"));
+    });
+    return "\uFEFF" + lines.join("\r\n");
+  }
+
+  function buildCurrentWorkTxt() {
+    const inp = state.inputs;
+    const c = state.calc;
+    const out = [];
+    out.push("АРМ СОБ — Цель " + inp.goalNum + " (" + inp.goalType + ")");
+    out.push("Система: " + inp.systemName + " | Заряд: " + inp.charge + " | Орудий: " + inp.guns);
+    out.push("КНП: " + inp.knpX + " / " + inp.knpY + " / " + inp.knpH + " | ОП: " + inp.opX + " / " + inp.opY + " / " + inp.opH);
+    if (c) {
+      out.push("Цель: Xц=" + c.xt + " Yц=" + c.yt + " hц=" + c.ht + " | Дцт=" + c.dct + " м | αцт=" + fmtMils(c.act, false) + " | δцт=" + fmtMils(c.deltact, true));
+      out.push("Ди=" + c.di + " м | δи=" + fmtMils(c.deltai, true) + " | Ур=" + fmtMils(c.ur, false) + " | Пр=" + c.effectivePr + " | Ку=" + c.ku.toFixed(1) + " | ПС=" + fmtMils(c.ps, true) + " (" + c.opSide + ") | Шу=" + fmtMils(c.shu, false));
+    }
+    out.push("");
+    out.push("ТАБЛИЦА СТРЕЛЬБЫ (Расход: " + state.totalRashod + "):");
+    state.rows.forEach(function (r) {
+      out.push(r.num + ") " + r.cmd + " | Пр:" + r.pr + " | Ур:" + r.ur + " | Напр:" + r.napr + " | Набл:" + r.obs + " | Расх:" + r.rashod);
+    });
+    return out.join("\r\n");
+  }
+
+  function createRandomTaskItem() {
+    const knpCallsigns = ["Кама", "Волга", "Ока", "Сокол", "Беркут", "Гранит"];
+    const opCallsigns = ["Вишня", "Акация", "Клён", "Ясень", "Тополь", "Берёза"];
+    const cmdCallsigns = ["Дон", "Урал", "Амур", "Енисей", "Днепр"];
+    const goalTypes = ["пехота на занятой позиции", "взводный опорный пункт", "миномётная батарея", "взвод самоходный", "наблюдательный пункт", "противотанковое орудие"];
+    const knpX = randInt(82000, 98000);
+    const knpY = randInt(28000, 48000);
+    const knpH = randInt(80, 180);
+    const is2b11 = state.appMode === "2b11";
+    const d30Mode = is2b11 ? "nast" : (state.genD30FireMode === "random" ? pickRandom(["nast", "rik", "mort"]) : state.genD30FireMode);
+    const minValidD = is2b11 ? 900 : (d30Mode === "mort" ? 4500 : 3200);
+    const maxValidD = is2b11 ? 6500 : (d30Mode === "rik" ? 8200 : 14200);
+    let opX, opY, dk, ak, xt, yt, dct;
+    for (let attempt = 0; attempt < 40; attempt++) {
+      const opAngle = Math.random() * 2 * Math.PI;
+      const opDist = is2b11 ? randInt(800, 2600) : (d30Mode === "mort" ? randInt(3800, 9200) : randInt(2400, 6800));
+      opX = Math.round(knpX + opDist * Math.cos(opAngle));
+      opY = Math.round(knpY + opDist * Math.sin(opAngle));
+      dk = is2b11 ? randInt(700, 2400) : randInt(1600, 3400);
+      ak = randInt(0, 5999);
+      const akRad = milsToRad(ak);
+      xt = knpX + dk * Math.cos(akRad);
+      yt = knpY + dk * Math.sin(akRad);
+      dct = Math.hypot(xt - opX, yt - opY);
+      if (dct >= minValidD && dct <= maxValidD) break;
+    }
+    const opH = Math.max(50, knpH + randInt(-35, 35));
+    const act = radToMils(Math.atan2(yt - opY, xt - opX));
+    const on = norm6000(act + randInt(-400, 400));
+    const charge = pickChargeForDist(dct, state.appMode, d30Mode);
+    const corrMode = state.genCorrMode || "pnzr";
+    return {
+      id: Date.now() + Math.random(),
+      dct: Math.round(dct),
+      corrMode: corrMode,
+      scenarioSteps: buildScenarioSteps(corrMode),
+      task: {
+        systemKey: is2b11 ? "2b11" : "d30",
+        systemName: is2b11 ? "120-мм миномёт 2Б11" : "122-мм Г Д-30",
+        charge: charge,
+        d30Mode: d30Mode,
+        guns: pickRandom([4, 6]),
+        callKnp: pickRandom(knpCallsigns),
+        callOp: pickRandom(opCallsigns),
+        callCmd: pickRandom(cmdCallsigns),
+        knpX: knpX, knpY: knpY, knpH: knpH,
+        opX: opX, opY: opY, opH: opH,
+        goalNum: String(randInt(101, 199)),
+        goalType: pickRandom(goalTypes),
+        taskType: pickRandom(["Подавить", "Уничтожить"]),
+        dk: dk, ak: fmtMils(ak, false), on: fmtMils(on, false),
+        mk: randInt(-15, 15), fcRaw: fmtMils(randInt(20, 80), false),
+        gc: randInt(80, 200), fb: 70,
+        ddCis: randInt(-180, 180), ddeltaCis: fmtMils(randInt(-35, 35), true),
+        startPr: 0, useDeriv: !is2b11
+      }
+    };
+  }
+
+  function solveTaskPure(item) {
+    const t = item.task;
+    const is2b11 = t.systemKey === "2b11";
+    const ak = parseMils(t.ak);
+    const on = parseMils(t.on);
+    const ddeltaCis = parseMils(t.ddeltaCis);
+    const akRad = milsToRad(ak);
+    const xt = Math.round(t.knpX + t.dk * Math.cos(akRad));
+    const yt = Math.round(t.knpY + t.dk * Math.sin(akRad));
+    const ht = Math.round(t.knpH + 0.001 * t.dk * (t.mk || 0));
+    const dct = Math.round(Math.hypot(xt - t.opX, yt - t.opY));
+    const act = radToMils(Math.atan2(yt - t.opY, xt - t.opX));
+    const actRad = milsToRad(act);
+    const deltact = normDelta(act - on);
+    const di = Math.round(dct + t.ddCis);
+    const ts = lookupTs(t.systemKey, t.charge, di, t.d30Mode);
+    const dxTys = ts ? ts.dxTys : 10;
+    const derivCorr = (t.useDeriv && ts) ? -ts.z : 0;
+    const deltai = normDelta(deltact + ddeltaCis + derivCorr);
+    const ur = 3000 + (dct > 0 ? Math.round((ht - t.opH) / (0.001 * dct)) : 0);
+    const effectivePr = t.startPr > 0 ? t.startPr : (ts ? ts.prTys : 0);
+    const ku = dct > 0 ? Math.round((t.dk / dct) * 10) / 10 : 0;
+    const ps = normDelta(ak - act);
+    const opSide = ps >= 0 ? "ОП справа" : "ОП слева";
+    const shu = dct > 0 ? Math.round(Math.abs(ps) / (0.01 * dct)) : 0;
+    const fcStr = String(t.fcRaw || "0").trim();
+    const fcMeters = fcStr.includes("-") ? Math.round(parseMils(fcStr) * 0.001 * t.dk) : (parseFloat(fcStr) || 0);
+    const skMeters = Math.round(t.gc / 3);
+    const skTys = dxTys > 0 ? Math.round(skMeters / dxTys) : 0;
+    const gunsCount = Math.max(1, t.guns);
+    const denomIv = 0.001 * dct * gunsCount;
+    const useTwoUglom = fcMeters > 50 && (fcMeters / gunsCount) > 50;
+    const frontForIv = useTwoUglom ? (fcMeters / 2) : fcMeters;
+    const iv = fcMeters <= 50 ? 0 : (denomIv > 0 ? Math.max(0, Math.round((frontForIv - t.fb) / denomIv)) : 0);
+    const uglomShift = useTwoUglom && dct > 0 ? Math.max(1, Math.round((fcMeters / 4) / (0.001 * dct))) : 0;
+
+    const c = { xt: xt, yt: yt, ht: ht, dct: dct, act: act, actRad: actRad, deltact: deltact, di: di, deltai: deltai, ur: ur, effectivePr: effectivePr, ku: ku, ps: ps, opSide: opSide, shu: shu, fcMeters: fcMeters, skMeters: skMeters, skTys: skTys, iv: iv, useTwoUglom: useTwoUglom, uglomShift: uglomShift, dxTys: dxTys };
+    const mortSign = (!is2b11 && t.d30Mode === "mort") ? -1 : 1;
+    const evenStep = 2 * Math.max(1, dxTys);
+    let forkStep = ts ? Math.max(evenStep, Math.round((8 * ts.vd) / evenStep) * evenStep) : 200;
+    const vdVal = ts ? ts.vd : 25;
+
+    function calcStep(st, fStep) {
+      if (st.kind === "pkss_adj" || st.kind === "pkss_ffe") {
+        const dxGeo = -(st.nsDir === "N" ? st.nsVal : -st.nsVal);
+        const dyGeo = -(st.ewDir === "E" ? st.ewVal : -st.ewVal);
+        const dRange = dxGeo * Math.cos(actRad) + dyGeo * Math.sin(actRad);
+        const dSide = -dxGeo * Math.sin(actRad) + dyGeo * Math.cos(actRad);
+        return { obsText: "Разрыв: " + (st.nsDir === "N" ? "С " : "Ю ") + st.nsVal + ", " + (st.ewDir === "E" ? "В " : "З ") + st.ewVal, dPr: Math.round(mortSign * (dRange / dxTys)), beta: dct > 0 ? Math.round(dSide / (0.001 * dct)) : 0 };
+      }
+      const alphaObs = st.side === "L" ? -Math.abs(st.dirVal || 0) : (st.side === "R" ? Math.abs(st.dirVal || 0) : 0);
+      let deltaD = 0;
+      if (st.kind === "series") {
+        const sPreob = t.gc < 100 ? vdVal : skMeters;
+        const sOnly = t.gc < 100 ? (2 * vdVal) : Math.round(skMeters * 1.5);
+        if (st.seriesMode === "preob_plus") deltaD = sPreob;
+        else if (st.seriesMode === "preob_minus") deltaD = -sPreob;
+        else if (st.seriesMode === "only_plus") deltaD = sOnly;
+        else if (st.seriesMode === "only_minus") deltaD = -sOnly;
+      } else if (st.rSign === "+") deltaD = fStep;
+      else if (st.rSign === "-") deltaD = -fStep;
+
+      if (Math.abs(ps) >= 500) {
+        const akRadR = milsToRad(norm6000(ak + alphaObs));
+        const dkR = t.dk + deltaD;
+        const xr = t.knpX + dkR * Math.cos(akRadR);
+        const yr = t.knpY + dkR * Math.sin(akRadR);
+        const drOp = Math.hypot(xr - t.opX, yr - t.opY);
+        const arOp = radToMils(Math.atan2(yr - t.opY, xr - t.opX));
+        return { obsText: st.text, dPr: Math.round(mortSign * (-(drOp - dct) / dxTys)), beta: -normDelta(arOp - act) };
+      }
+      const opRightSign = ps >= 0 ? -1 : 1;
+      return { obsText: st.text, dPr: Math.round(mortSign * (-deltaD / dxTys)), beta: Math.round(-alphaObs * ku + opRightSign * (deltaD / 100) * shu) };
+    }
+
+    const ammoW = is2b11 ? "Мина" : "Сн.";
+    const shotW = is2b11 ? "мину" : "снаряд";
+    const adjCmdW = is2b11 ? "Осн. 1 мин. Ог." : "Осн. 1 сн. Ог.";
+    const ffeShotW = is2b11 ? " мин. бег. Ог." : " сн. бег. Ог.";
+    const fuzeW = (!is2b11 && t.d30Mode === "rik") ? "З" : "О";
+    const modeW = (!is2b11 && t.d30Mode === "mort") ? " Мортирная." : ((!is2b11 && t.d30Mode === "rik") ? " На рикошет." : "");
+    const cmd1 = "«" + t.callKnp + "». Стой. Цель " + t.goalNum + "-я, " + t.goalType + ". " + t.taskType + ". " + ammoW + " «ОФ». Взр. «" + fuzeW + "». Зар. " + (ts ? ts.cmdLabel : t.charge) + "." + modeW + " Шк. Тыс. Основному 1 " + shotW + ". Огонь.";
+    const rows = [{ num: 1, cmd: cmd1, pr: String(effectivePr), ur: fmtMils(ur, false), napr: "ОН " + fmtMils(deltai, true), obs: "", rashod: 1 }];
+    let curPr = effectivePr;
+    let curNapr = deltai;
+    let totalRashod = 1;
+    let seenP = false;
+    let seenM = false;
+    const numUstRange = t.gc < 100 ? 1 : 3;
+    const numUstDir = useTwoUglom ? 2 : 1;
+    const ivText = fcMeters <= 50 ? "Сосредоточенный. " : (iv > 0 ? ("Iв " + fmtMils(iv, false) + ". ") : "Веер параллельный. ");
+    const ugText = useTwoUglom ? ("Углом. 2 (±" + fmtMils(uglomShift, false) + "). ") : "";
+    const ffeCmd = t.gc < 100 ? ("Батарее. " + ivText + ugText + "по 2" + ffeShotW) : ("Батарее. " + ivText + ugText + "Уст 2. Ск. " + skTys + ". по 2" + ffeShotW);
+    const ffeShots = t.guns * 2 * numUstRange * numUstDir;
+
+    (item.scenarioSteps || []).forEach(function (st) {
+      if (st.kind === "pnzr_adj" || st.kind === "pkss_adj") {
+        if (st.kind === "pnzr_adj") {
+          if (st.rSign === "+") seenP = true;
+          if (st.rSign === "-") seenM = true;
+          if (seenP && seenM) forkStep = Math.max(evenStep, Math.round(forkStep / 2));
+        }
+        const r = calcStep(st, forkStep);
+        rows[rows.length - 1].obs = r.obsText;
+        curPr += r.dPr;
+        curNapr += r.beta;
+        totalRashod += 1;
+        rows.push({ num: rows.length + 1, cmd: adjCmdW, pr: r.dPr > 0 ? "+" + r.dPr : String(r.dPr), ur: "", napr: fmtMils(r.beta, true), obs: "", rashod: 1 });
+      } else if (st.kind === "pnzr_ffe" || st.kind === "pkss_ffe") {
+        if (st.kind === "pnzr_ffe") {
+          if (st.rSign === "+") seenP = true;
+          if (st.rSign === "-") seenM = true;
+          if (seenP && seenM) forkStep = Math.max(evenStep, Math.round(forkStep / 2));
+        }
+        const r = calcStep(st, forkStep);
+        rows[rows.length - 1].obs = r.obsText;
+        curPr += r.dPr;
+        curNapr += r.beta;
+        totalRashod += ffeShots;
+        rows.push({ num: rows.length + 1, cmd: ffeCmd, pr: String(curPr), ur: "", napr: fmtMils(curNapr, true), obs: "", rashod: ffeShots });
+      } else if (st.kind === "series") {
+        const r = calcStep(st, forkStep);
+        rows[rows.length - 1].obs = r.obsText;
+        curPr += r.dPr;
+        curNapr += r.beta;
+        rows.push({ num: rows.length + 1, cmd: "«" + t.callKnp + "», Стой. Записать. Цель " + t.goalNum + "-я, " + t.goalType + ". Расход " + totalRashod + ".", pr: String(curPr), ur: fmtMils(ur, false), napr: fmtMils(curNapr, true), obs: "Корр. по серии: ΔПр " + (r.dPr > 0 ? "+" + r.dPr : r.dPr) + ", β " + fmtMils(r.beta, true), rashod: totalRashod });
+      }
+    });
+    return { item: item, calc: c, ts: ts, rows: rows, totalRashod: totalRashod };
+  }
+
+  function renderVariantTaskHtml(solved, idx) {
+    const t = solved.item.task;
+    const chDict = t.systemKey === "2b11" ? TS_2B11 : TS_D30;
+    const chLabel = chDict[t.charge] ? chDict[t.charge].label : t.charge;
+    const modeTxt = t.systemKey === "2b11" ? "" : (" • " + (t.d30Mode === "mort" ? "Мортирная" : (t.d30Mode === "rik" ? "Рикошет" : "Настильная")));
+    let h = '<div class="p-variant">';
+    h += '<div class="p-doc-title">Вариант №' + idx + ' — Огневая задача (Цель ' + escapeHtml(t.goalNum) + ')</div>';
+    h += '<div class="p-doc-sub">' + escapeHtml(t.systemName + " • Заряд: " + chLabel + modeTxt + " • " + (solved.item.corrMode === "pkss" ? "ПКСС" : "ПНЗР")) + '</div>';
+    h += '<table class="p-grid"><tbody>';
+    h += '<tr><th>Позывные / Орудий</th><td>' + escapeHtml(t.callKnp + " / " + t.callOp + " / " + t.callCmd + " (" + t.guns + " ор.)") + '</td><th>Цель / Задача</th><td>' + escapeHtml("№" + t.goalNum + ", " + t.goalType + " — " + t.taskType) + '</td></tr>';
+    h += '<tr><th>КНП (X / Y / h)</th><td>' + t.knpX + ' / ' + t.knpY + ' / ' + t.knpH + ' м</td><th>ОП (X / Y / h)</th><td>' + t.opX + ' / ' + t.opY + ' / ' + t.opH + ' м</td></tr>';
+    h += '<tr><th>Дк / αк / Mк</th><td>' + t.dk + ' м / ' + escapeHtml(t.ak) + ' / ' + t.mk + '</td><th>ОН / Фц / Гц / Фб</th><td>' + escapeHtml(t.on) + ' / ' + escapeHtml(t.fcRaw) + ' / ' + t.gc + ' м / ' + t.fb + ' м</td></tr>';
+    h += '<tr><th>Поправки</th><td colspan="3">ΔДцис = ' + t.ddCis + ' м, Δδиис = ' + escapeHtml(t.ddeltaCis) + (t.useDeriv ? ' (учесть деривацию Z)' : '') + '</td></tr>';
+    h += '</tbody></table>';
+    h += '<div class="p-h2">Вводные по разрывам</div><ol class="p-steps">';
+    (solved.item.scenarioSteps || []).forEach(function (st) {
+      h += '<li><b>' + escapeHtml(st.stage) + ':</b> ' + escapeHtml(st.text) + '</li>';
+    });
+    h += '</ol></div>';
+    return h;
+  }
+
+  function renderVariantSolutionHtml(solved, idx) {
+    const t = solved.item.task;
+    const c = solved.calc;
+    const ts = solved.ts;
+    let h = '<div class="p-variant">';
+    h += '<div class="p-doc-title">Вариант №' + idx + ' — Решение (Цель ' + escapeHtml(t.goalNum) + ')</div>';
+    h += '<div class="p-doc-sub">' + escapeHtml(t.systemName + " • Заряд: " + (ts ? ts.label : t.charge) + " • Расход: " + solved.totalRashod) + '</div>';
+    h += '<table class="p-grid"><tbody>';
+    h += '<tr><th>Цель (Xц / Yц / hц)</th><td>' + c.xt + ' / ' + c.yt + ' / ' + c.ht + ' м</td><th>Дцт / αцт / δцт</th><td>' + c.dct + ' м / ' + fmtMils(c.act, false) + ' / ' + fmtMils(c.deltact, true) + '</td></tr>';
+    h += '<tr><th>Ди / δи</th><td>' + c.di + ' м / ' + fmtMils(c.deltai, true) + '</td><th>Ур / Пр</th><td>' + fmtMils(c.ur, false) + ' / ' + c.effectivePr + ' (ΔХтыс=' + c.dxTys + ' м, Вд=' + (ts ? ts.vd : '—') + ' м)</td></tr>';
+    h += '<tr><th>Ку / ПС / Шу</th><td>' + c.ku.toFixed(1) + ' / ' + fmtMils(Math.abs(c.ps), false) + ' (' + escapeHtml(c.opSide) + ') / ' + fmtMils(c.shu, false) + '</td><th>Ск / Iв</th><td>' + c.skMeters + ' м (' + c.skTys + ' тыс.) / ' + fmtMils(c.iv, false) + (c.useTwoUglom ? ' (Углом. 2)' : '') + '</td></tr>';
+    h += '</tbody></table>';
+    h += '<table class="p-table"><thead><tr><th>№</th><th>Команда</th><th>Пр</th><th>Ур</th><th>Напр</th><th>Наблюдения</th><th>Расход</th></tr></thead><tbody>';
+    solved.rows.forEach(function (r) {
+      h += '<tr><td>' + r.num + '</td><td>' + escapeHtml(r.cmd) + '</td><td>' + escapeHtml(r.pr) + '</td><td>' + escapeHtml(r.ur) + '</td><td>' + escapeHtml(r.napr) + '</td><td>' + escapeHtml(r.obs) + '</td><td>' + escapeHtml(String(r.rashod)) + '</td></tr>';
+    });
+    h += '</tbody></table></div>';
+    return h;
+  }
+
+  function buildBatchTxt(list, isSolutions) {
+    return list.map(function (s, i) {
+      const n = i + 1;
+      const t = s.item.task;
+      const lines = ["========================================"];
+      if (!isSolutions) {
+        lines.push("ВАРИАНТ №" + n + " — УСЛОВИЕ (Цель " + t.goalNum + ", " + t.goalType + ")");
+        lines.push(t.systemName + " | Заряд: " + t.charge + " | Орудий: " + t.guns + " | " + (s.item.corrMode === "pkss" ? "ПКСС" : "ПНЗР"));
+        lines.push("КНП: " + t.knpX + " / " + t.knpY + " / " + t.knpH + " | ОП: " + t.opX + " / " + t.opY + " / " + t.opH);
+        lines.push("Дк=" + t.dk + " м | αк=" + t.ak + " | Mк=" + t.mk + " | ОН=" + t.on + " | Фц=" + t.fcRaw + " | Гц=" + t.gc + " м | Фб=" + t.fb + " м");
+        lines.push("Поправки: ΔДцис=" + t.ddCis + " м, Δδиис=" + t.ddeltaCis);
+        lines.push("Вводные:");
+        (s.item.scenarioSteps || []).forEach(function (st, k) {
+          lines.push("  " + (k + 1) + ". [" + st.stage + "] " + st.text);
+        });
+      } else {
+        const c = s.calc;
+        lines.push("ВАРИАНТ №" + n + " — РЕШЕНИЕ (Цель " + t.goalNum + ")");
+        lines.push("Xц=" + c.xt + " Yц=" + c.yt + " hц=" + c.ht + " | Дцт=" + c.dct + " м | αцт=" + fmtMils(c.act, false) + " | δцт=" + fmtMils(c.deltact, true));
+        lines.push("Ди=" + c.di + " м | δи=" + fmtMils(c.deltai, true) + " | Ур=" + fmtMils(c.ur, false) + " | Пр=" + c.effectivePr + " | Ку=" + c.ku.toFixed(1) + " | ПС=" + fmtMils(c.ps, true) + " (" + c.opSide + ") | Шу=" + fmtMils(c.shu, false));
+        lines.push("Таблица стрельбы (Расход: " + s.totalRashod + "):");
+        s.rows.forEach(function (r) {
+          lines.push("  " + r.num + ") " + r.cmd + " | Пр:" + r.pr + " | Ур:" + r.ur + " | Напр:" + r.napr + " | Набл:" + r.obs + " | Расх:" + r.rashod);
+        });
+      }
+      return lines.join("\r\n");
+    }).join("\r\n\r\n");
+  }
+
+  function exportBatchPart(part) {
+    const list = state.batchVariants;
+    if (!list || list.length === 0) {
+      showToast("Сначала сгенерируйте пакет вариантов");
+      return;
+    }
+    const fmt = $("batchFormat") ? $("batchFormat").value : "pdf";
+    const isSol = part === "solutions";
+    const count = list.length;
+    const prefix = state.appMode === "2b11" ? "2B11" : "D30";
+    const baseName = (isSol ? "Решения_" : "Варианты_") + prefix + "_1-" + count;
+    const bodyHtml = list.map(function (s, i) {
+      return isSol ? renderVariantSolutionHtml(s, i + 1) : renderVariantTaskHtml(s, i + 1);
+    }).join("");
+
+    if (fmt === "pdf") {
+      printHtmlDocument(baseName, bodyHtml);
+    } else if (fmt === "doc") {
+      downloadFile(baseName + ".doc", wrapWordDoc(baseName, bodyHtml), "application/msword;charset=utf-8");
+    } else if (fmt === "html") {
+      downloadFile(baseName + ".html", wrapStandaloneHtml(baseName, bodyHtml, true), "text/html;charset=utf-8");
+    } else {
+      downloadFile(baseName + ".txt", buildBatchTxt(list, isSol), "text/plain;charset=utf-8");
+    }
+  }
+
+  function bindExportEvents() {
+    if ($("btnOpenExport")) {
+      $("btnOpenExport").addEventListener("click", function () { openModal("modalExport"); });
+    }
+    if ($("btnCloseExport")) {
+      $("btnCloseExport").addEventListener("click", function () { closeModal("modalExport"); });
+    }
+    if ($("btnExpCurPdf")) {
+      $("btnExpCurPdf").addEventListener("click", function () {
+        closeModal("modalExport");
+        printHtmlDocument("АРМ_СОБ_Цель_" + state.inputs.goalNum, buildCurrentWorkHtml());
+      });
+    }
+    if ($("btnExpCurDoc")) {
+      $("btnExpCurDoc").addEventListener("click", function () {
+        const name = "АРМ_СОБ_Цель_" + state.inputs.goalNum + ".doc";
+        downloadFile(name, wrapWordDoc(name, buildCurrentWorkHtml()), "application/msword;charset=utf-8");
+        showToast("Word-файл сохранён");
+      });
+    }
+    if ($("btnExpCurCsv")) {
+      $("btnExpCurCsv").addEventListener("click", function () {
+        downloadFile("АРМ_СОБ_Цель_" + state.inputs.goalNum + ".csv", buildCurrentWorkCsv(), "text/csv;charset=utf-8");
+        showToast("CSV (Excel) сохранён");
+      });
+    }
+    if ($("btnExpCurHtml")) {
+      $("btnExpCurHtml").addEventListener("click", function () {
+        const name = "АРМ_СОБ_Цель_" + state.inputs.goalNum;
+        downloadFile(name + ".html", wrapStandaloneHtml(name, buildCurrentWorkHtml(), true), "text/html;charset=utf-8");
+        showToast("HTML для PDF сохранён");
+      });
+    }
+    if ($("btnExpCurTxt")) {
+      $("btnExpCurTxt").addEventListener("click", function () {
+        downloadFile("АРМ_СОБ_Цель_" + state.inputs.goalNum + ".txt", buildCurrentWorkTxt(), "text/plain;charset=utf-8");
+        showToast("TXT сохранён");
+      });
+    }
+    if ($("btnExpCurJson")) {
+      $("btnExpCurJson").addEventListener("click", function () {
+        const payload = JSON.stringify({ inputs: state.inputs, calc: state.calc, rows: state.rows, totalRashod: state.totalRashod }, null, 2);
+        downloadFile("АРМ_СОБ_Цель_" + state.inputs.goalNum + ".json", payload, "application/json;charset=utf-8");
+        showToast("JSON сохранён");
+      });
+    }
+
+    if ($("btnGenExportTaskPdf")) {
+      $("btnGenExportTaskPdf").addEventListener("click", function () {
+        if (!state.currentGenItem) return;
+        const solved = solveTaskPure(state.currentGenItem);
+        printHtmlDocument("Задача_Цель_" + state.currentGenItem.task.goalNum, renderVariantTaskHtml(solved, 1));
+      });
+    }
+    if ($("btnGenExportSolPdf")) {
+      $("btnGenExportSolPdf").addEventListener("click", function () {
+        if (!state.currentGenItem) return;
+        const solved = solveTaskPure(state.currentGenItem);
+        const html = renderVariantTaskHtml(solved, 1) + renderVariantSolutionHtml(solved, 1);
+        printHtmlDocument("Решение_Цель_" + state.currentGenItem.task.goalNum, html);
+      });
+    }
+    if ($("btnGenExportSolDoc")) {
+      $("btnGenExportSolDoc").addEventListener("click", function () {
+        if (!state.currentGenItem) return;
+        const solved = solveTaskPure(state.currentGenItem);
+        const name = "Решение_Цель_" + state.currentGenItem.task.goalNum;
+        const html = renderVariantTaskHtml(solved, 1) + renderVariantSolutionHtml(solved, 1);
+        downloadFile(name + ".doc", wrapWordDoc(name, html), "application/msword;charset=utf-8");
+        showToast("Word-файл решения сохранён");
+      });
+    }
+
+    if ($("btnBatchGenerate")) {
+      $("btnBatchGenerate").addEventListener("click", function () {
+        const n = Math.max(1, Math.min(100, parseInt($("batchCount").value, 10) || 10));
+        $("batchCount").value = String(n);
+        const list = [];
+        for (let i = 0; i < n; i++) {
+          list.push(solveTaskPure(createRandomTaskItem()));
+        }
+        state.batchVariants = list;
+        $("batchStatusPill").textContent = "Готово: " + n + " вар.";
+        $("btnBatchExportTasks").disabled = false;
+        $("btnBatchExportSolutions").disabled = false;
+        $("btnBatchExportBoth").disabled = false;
+        showToast("Сгенерировано вариантов: " + n);
+      });
+    }
+    if ($("btnBatchExportTasks")) {
+      $("btnBatchExportTasks").addEventListener("click", function () { exportBatchPart("tasks"); });
+    }
+    if ($("btnBatchExportSolutions")) {
+      $("btnBatchExportSolutions").addEventListener("click", function () { exportBatchPart("solutions"); });
+    }
+    if ($("btnBatchExportBoth")) {
+      $("btnBatchExportBoth").addEventListener("click", function () {
+        const fmt = $("batchFormat") ? $("batchFormat").value : "pdf";
+        if (fmt === "pdf") {
+          const list = state.batchVariants;
+          if (!list.length) return;
+          const prefix = state.appMode === "2b11" ? "2B11" : "D30";
+          const n = list.length;
+          const tHtml = list.map(function (s, i) { return renderVariantTaskHtml(s, i + 1); }).join("");
+          const sHtml = list.map(function (s, i) { return renderVariantSolutionHtml(s, i + 1); }).join("");
+          downloadFile("Варианты_" + prefix + "_1-" + n + ".html", wrapStandaloneHtml("Варианты " + prefix + " 1-" + n, tHtml, true), "text/html;charset=utf-8");
+          setTimeout(function () {
+            downloadFile("Решения_" + prefix + "_1-" + n + ".html", wrapStandaloneHtml("Решения " + prefix + " 1-" + n, sHtml, true), "text/html;charset=utf-8");
+          }, 500);
+          showToast("Скачаны 2 HTML-файла (открой и нажми Печать → PDF)");
+          return;
+        }
+        exportBatchPart("tasks");
+        setTimeout(function () {
+          exportBatchPart("solutions");
+        }, 500);
+        showToast("Оба файла выгружены (условия + решения)");
+      });
+    }
   }
 
   function bindEvents() {
@@ -2709,10 +3392,13 @@
       }
     });
 
+    if ($("inTargetInputMode")) {
+      $("inTargetInputMode").addEventListener("change", syncTargetInputModeUI);
+    }
     $("btnLoadVariant3").addEventListener("click", function () { loadPreset("variant3"); });
     $("btnClearSetup").addEventListener("click", function () {
       ["inGuns", "inDxTys", "inCallKnp", "inCallOp", "inCallCmd", "inKnpX", "inKnpY", "inKnpH",
-       "inOpX", "inOpY", "inOpH", "inGoalNum", "inGoalType", "inTaskType", "inDk", "inAk",
+       "inOpX", "inOpY", "inOpH", "inTargetX", "inTargetY", "inTargetH", "inGoalNum", "inGoalType", "inTaskType", "inDk", "inAk",
        "inOn", "inBaseUglom", "inMk", "inFc", "inGc", "inFb", "inDdCis", "inDdeltaCis", "inStartPr"].forEach(function (id) {
         $(id).value = "";
       });
@@ -2803,9 +3489,22 @@
       });
     });
 
+    if ($("inFuzeMode")) {
+      $("inFuzeMode").addEventListener("change", function () {
+        const fm = $("inFuzeMode").value;
+        if ($("inTrStartField")) $("inTrStartField").classList.toggle("hidden", fm !== "dt");
+        if ($("inHoptField")) $("inHoptField").classList.toggle("hidden", fm !== "dt");
+        if ($("cmd1Fuze")) {
+          if (fm === "dt") $("cmd1Fuze").value = "Т-90";
+          else if (fm === "rv") $("cmd1Fuze").value = "АР-30 (В)";
+          else $("cmd1Fuze").value = "О";
+        }
+      });
+    }
+
     [
       "bDirSide", "bDirVal", "bRangeSign", "bRangeMeters", "bForkStep",
-      "bSeriesMode", "bShellsPerGun", "bExactPs", "pRefType", "pNsDir", "pNsVal", "pEwDir", "pEwVal"
+      "bSeriesMode", "bShellsPerGun", "bExactPs", "bHeightType", "bHeightMils", "pRefType", "pNsDir", "pNsVal", "pEwDir", "pEwVal"
     ].forEach(function (id) {
       $(id).addEventListener("input", updateBurstPreview);
       $(id).addEventListener("change", updateBurstPreview);
@@ -2984,6 +3683,7 @@
         renderLearnPanel();
       });
     });
+    bindExportEvents();
   }
 
 
@@ -3020,6 +3720,13 @@
       const sysW = t.systemKey || "d30";
       $("inSystem").value = sysW;
       if ($("inD30Mode")) $("inD30Mode").value = t.d30Mode || "nast";
+      if ($("inFuzeMode")) {
+        $("inFuzeMode").value = t.fuzeMode || "impact";
+        if ($("inTrStartField")) $("inTrStartField").classList.toggle("hidden", $("inFuzeMode").value !== "dt");
+        if ($("inHoptField")) $("inHoptField").classList.toggle("hidden", $("inFuzeMode").value !== "dt");
+      }
+      if ($("inTrStart")) $("inTrStart").value = t.trStart || "";
+      if ($("inHopt") && t.hOpt) $("inHopt").value = t.hOpt;
       syncChargeOptions(sysW === "2b11");
       $("inCharge").value = t.charge || (sysW === "2b11" ? "4" : "2");
       $("inGuns").value = t.guns || 4;
@@ -3036,6 +3743,10 @@
       $("inGoalNum").value = t.goalNum && t.goalNum !== "—" ? t.goalNum : "";
       $("inGoalType").value = t.goalType && t.goalType !== "цель" ? t.goalType : "";
       $("inTaskType").value = t.taskType || "";
+      if ($("inTargetInputMode")) { $("inTargetInputMode").value = t.targetInputMode || "polar"; syncTargetInputModeUI(); }
+      if (t.targetX !== null && t.targetX !== undefined && $("inTargetX")) $("inTargetX").value = t.targetX;
+      if (t.targetY !== null && t.targetY !== undefined && $("inTargetY")) $("inTargetY").value = t.targetY;
+      if (t.targetH !== null && t.targetH !== undefined && $("inTargetH")) $("inTargetH").value = t.targetH;
       if (t.dk !== null) $("inDk").value = t.dk;
       if (t.ak !== null) $("inAk").value = fmtMils(t.ak, false);
       if (t.on !== null) $("inOn").value = fmtMils(t.on, false);

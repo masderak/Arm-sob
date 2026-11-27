@@ -1,4 +1,4 @@
-const CACHE_NAME = "sob-arm-v7";
+const CACHE_NAME = "sob-arm-v15";
 const ASSETS = ["./index.html", "./style.css", "./script.js", "./theory.js", "./manifest.json", "./icon.png", "./apple-touch-icon.png"];
 
 self.addEventListener("install", (event) => {
